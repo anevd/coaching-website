@@ -3,3 +3,22 @@
 // Настя В
 
 // Настя С
+.path {
+    background-color: $color-beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__paragraph1,
+    &__paragraph2,
+    &__paragraph3 {
+
+        padding-bottom: 30px;
+        width: 75%;
+    }
+
+    &__paragraph1 {
+        padding-top: 15px;
+    }
+}

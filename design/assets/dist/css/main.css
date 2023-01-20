@@ -414,3 +414,19 @@ p {
   color: #3f3c20;
   text-transform: uppercase;
 }
+
+.path {
+  background-color: #f6f1eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.path__paragraph1, .path__paragraph2, .path__paragraph3 {
+  font-family: default-font;
+  padding-bottom: 30px;
+  width: 75%;
+}
+.path__paragraph1 {
+  padding-top: 15px;
+}
