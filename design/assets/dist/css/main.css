@@ -423,7 +423,6 @@ p {
   align-items: center;
 }
 .path__paragraph1, .path__paragraph2, .path__paragraph3 {
-  font-family: default-font;
   padding-bottom: 30px;
   width: 75%;
 }
