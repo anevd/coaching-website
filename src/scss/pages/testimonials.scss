@@ -1,78 +1,74 @@
 @import "../layouts/variables.scss";
 
-    .section{
+    .testimonials-item{
     display: flex;
     flex-direction: row;
-    margin-top: 70px;
+    margin-top: 6%;
 }
-.user__img{
+.testimonials-item__user_img{
     max-width: 80%;
         }
-.user__name{
+.testimonials-item__user_name{
     font-family:$default-font;
-    color: $color-text;
+    
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5%;
 }
-.user__date{
+.testimonials-item__user_date{
     font-family:$default-font;
-    color: $color-text;
+   
     font-weight: 300;
     font-size: 20px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 2%;
 }
-.user{display: flex;
+.testimonials-item__user{display: flex;
 flex-direction: column;
 align-items: center;}
-.user__text_right{
+.testimonials-item__user_text-right{
     font-family:$default-font;
-    color: $color-text;
     font-weight: 400;
     font-size: 24px;
     border: 1px solid $color-beige;
     background-color: $color-beige;
     border-radius: 30px;
-    padding:40px 55px 40px 55px;
+    line-height: 140%;
+    padding:4% 5% 4% 5%;
     margin-left: 65px;
     width: 906px;
-    height: 250px;
+    height: 309px;
+    position: relative;
     }
-.user__text_left{
+
+    .testimonials-item__user_text-right::after {
+        content: ''; 
+        position: absolute; /* Абсолютное позиционирование */
+        left: -44px; top: 55px; /* Положение треугольника */
+        border: 15px solid transparent;  /* Прозрачные границы */
+        border-right: 30px solid $color-beige; /* Добавляем треугольник */}
+
+.testimonials-item__user_text-left{
     font-family:$default-font;
-    color: $color-text;
     font-weight: 400;
     font-size: 24px;
     border: 1px solid $color-beige;
     background-color: $color-beige;
     border-radius: 30px;
-    padding:40px 55px 40px 55px;
+    line-height: 140%;
+    padding:4% 5% 4% 5%;
     margin-right: 65px;
     width: 906px;
-    height: 250px;
+    height: 309px;
+    position: relative;
 }
-.triangle_right{
-    background: green;
-    position: relative;
-    width: 100px; height: 50px;
-   }
-   .triangle_right::after {
+.testimonials-item__user_text-left::after {
     content: ''; 
-    position: absolute;
-    right: -66px; top: 55px;
-    border: 15px solid transparent; border-right: 30px solid $color-beige;
-   }
-   .triangle_left{
-    background: green;
-    position: relative;
-    width: 100px; height: 50px;
-   }
-   .triangle_left::after {
-    content: ''; 
-    position: absolute;
-    left: 905px; top: 55px;
-    border: 15px solid transparent; border-left: 30px solid $color-beige;
-   }
+    position: absolute; /* Абсолютное позиционирование */
+    right: -44px; top: 55px; /* Положение треугольника */
+    border: 15px solid transparent; 
+    border-left: 30px solid $color-beige;}
+
+
    

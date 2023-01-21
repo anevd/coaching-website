@@ -356,6 +356,7 @@ template {
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
   \******************************************************************************************************************************************************/
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -363,6 +364,7 @@ template {
   border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  color: #3f3c20;
 }
 
 h1,
@@ -415,96 +417,82 @@ p {
   text-transform: uppercase;
 }
 
-.section {
+.testimonials-item {
   display: flex;
   flex-direction: row;
-  margin-top: 70px;
+  margin-top: 6%;
 }
 
-.user__img {
+.testimonials-item__user_img {
   max-width: 80%;
 }
 
-.user__name {
+.testimonials-item__user_name {
   font-family: "Montserrat", sans-serif;
-  color: #3f3c20;
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5%;
 }
 
-.user__date {
+.testimonials-item__user_date {
   font-family: "Montserrat", sans-serif;
-  color: #3f3c20;
   font-weight: 300;
   font-size: 20px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 2%;
 }
 
-.user {
+.testimonials-item__user {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.user__text_right {
+.testimonials-item__user_text-right {
   font-family: "Montserrat", sans-serif;
-  color: #3f3c20;
   font-weight: 400;
   font-size: 24px;
   border: 1px solid #f6f1eb;
   background-color: #f6f1eb;
   border-radius: 30px;
-  padding: 40px 55px 40px 55px;
+  line-height: 140%;
+  padding: 4% 5% 4% 5%;
   margin-left: 65px;
   width: 906px;
-  height: 250px;
+  height: 309px;
+  position: relative;
 }
 
-.user__text_left {
+.testimonials-item__user_text-right::after {
+  content: "";
+  position: absolute; /* Абсолютное позиционирование */
+  left: -44px;
+  top: 55px; /* Положение треугольника */
+  border: 15px solid transparent; /* Прозрачные границы */
+  border-right: 30px solid #f6f1eb; /* Добавляем треугольник */
+}
+
+.testimonials-item__user_text-left {
   font-family: "Montserrat", sans-serif;
-  color: #3f3c20;
   font-weight: 400;
   font-size: 24px;
   border: 1px solid #f6f1eb;
   background-color: #f6f1eb;
   border-radius: 30px;
-  padding: 40px 55px 40px 55px;
+  line-height: 140%;
+  padding: 4% 5% 4% 5%;
   margin-right: 65px;
   width: 906px;
-  height: 250px;
-}
-
-.triangle_right {
-  background: green;
+  height: 309px;
   position: relative;
-  width: 100px;
-  height: 50px;
 }
 
-.triangle_right::after {
+.testimonials-item__user_text-left::after {
   content: "";
-  position: absolute;
-  right: -66px;
-  top: 55px;
-  border: 15px solid transparent;
-  border-right: 30px solid #f6f1eb;
-}
-
-.triangle_left {
-  background: green;
-  position: relative;
-  width: 100px;
-  height: 50px;
-}
-
-.triangle_left::after {
-  content: "";
-  position: absolute;
-  left: 905px;
-  top: 55px;
+  position: absolute; /* Абсолютное позиционирование */
+  right: -44px;
+  top: 55px; /* Положение треугольника */
   border: 15px solid transparent;
   border-left: 30px solid #f6f1eb;
 }
