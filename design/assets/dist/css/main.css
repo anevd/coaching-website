@@ -443,6 +443,12 @@ p {
   margin-top: 10px;
 }
 
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .user__text_right {
   font-family: "Montserrat", sans-serif;
   color: #3f3c20;

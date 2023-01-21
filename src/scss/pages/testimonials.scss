@@ -1,13 +1,13 @@
 @import "../layouts/variables.scss";
 
-.section{
+    .section{
     display: flex;
     flex-direction: row;
     margin-top: 70px;
 }
 .user__img{
     max-width: 80%;
-    }
+        }
 .user__name{
     font-family:$default-font;
     color: $color-text;
@@ -24,6 +24,9 @@
     text-align: center;
     margin-top: 10px;
 }
+.user{display: flex;
+flex-direction: column;
+align-items: center;}
 .user__text_right{
     font-family:$default-font;
     color: $color-text;
@@ -72,3 +75,4 @@
     left: 905px; top: 55px;
     border: 15px solid transparent; border-left: 30px solid $color-beige;
    }
+   
