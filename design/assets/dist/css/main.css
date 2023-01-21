@@ -414,3 +414,36 @@ p {
   color: #3f3c20;
   text-transform: uppercase;
 }
+
+.home-testimonials {
+  background-color: #f6f1eb;
+}
+
+.home-testimonials__item {
+  width: 668px;
+  height: 207px;
+  font-family: "Montserrat", sans-serif;
+  color: #3f3c20;
+  letter-spacing: 0.02em;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.home-testimonials__item-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.home-testimonials__item-name, .home-testimonials__item-date {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.home-testimonials__item-name {
+  font-weight: 600;
+}
+
+.home-testimonials__item-date {
+  font-weight: 300;
+}
