@@ -5,14 +5,32 @@
 // Альбина
 //section "testimonials"
 .home-testimonials {
+    padding-top: 60px;
+    padding-bottom: 151px;
     background-color: $color-beige;
 }
 
+.wrapper-img {
+    position: relative;
+}
+
+.home-testimonials__img-background {
+    position: absolute;
+    top: 16%;
+}
+
+.home-testimonials__container {
+    padding-left: 39.75%; //477px;
+    padding-right: 55px;
+    margin-top: 51px;
+}
+
 .home-testimonials__item {
-    width: 668px;
-    height: 207px;
+    padding: 28px 33px 19px 33px;
+    margin-bottom: 38px;
+    width: 100%; //668px;
+    min-height: 207px;
     font-family: $default-font;
-    color: $color-text;
     letter-spacing: 0.02em;
     background-color: #FFFFFF;
     border-radius: 15px;
@@ -24,12 +42,13 @@
     line-height: 140%;
 }
 
-.home-testimonials__item-name, .home-testimonials__item-date {
+.home-testimonials__item-author, .home-testimonials__item-date {
     font-size: 16px;
     line-height: 30px;
 }
 
-.home-testimonials__item-name {
+.home-testimonials__item-author {
+    margin-top: 22px;
     font-weight: 600;
 }
 
