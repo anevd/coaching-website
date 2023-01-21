@@ -522,7 +522,6 @@ p {
 }
 
 .testimonials-item__user_name {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
   text-align: center;
@@ -530,7 +529,6 @@ p {
 }
 
 .testimonials-item__user_date {
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-align: center;
@@ -544,8 +542,6 @@ p {
 }
 
 .testimonials-item__user_text-right {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   font-size: 24px;
   border: 1px solid #f6f1eb;
   background-color: #f6f1eb;
@@ -568,8 +564,6 @@ p {
 }
 
 .testimonials-item__user_text-left {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   font-size: 24px;
   border: 1px solid #f6f1eb;
   background-color: #f6f1eb;

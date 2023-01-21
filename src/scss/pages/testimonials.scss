@@ -9,16 +9,12 @@
     max-width: 80%;
         }
 .testimonials-item__user_name{
-    font-family:$default-font;
-    
     font-weight: 600;
     font-size: 20px;
     text-align: center;
     margin-top: 5%;
 }
 .testimonials-item__user_date{
-    font-family:$default-font;
-   
     font-weight: 300;
     font-size: 20px;
     text-align: center;
@@ -28,8 +24,6 @@
 flex-direction: column;
 align-items: center;}
 .testimonials-item__user_text-right{
-    font-family:$default-font;
-    font-weight: 400;
     font-size: 24px;
     border: 1px solid $color-beige;
     background-color: $color-beige;
@@ -50,8 +44,6 @@ align-items: center;}
         border-right: 30px solid $color-beige; }
 
 .testimonials-item__user_text-left{
-    font-family:$default-font;
-    font-weight: 400;
     font-size: 24px;
     border: 1px solid $color-beige;
     background-color: $color-beige;
@@ -69,6 +61,3 @@ align-items: center;}
     right: -44px; top: 55px; 
     border: 15px solid transparent; 
     border-left: 30px solid $color-beige;}
-
-
-   
