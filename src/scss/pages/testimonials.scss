@@ -44,10 +44,10 @@ align-items: center;}
 
     .testimonials-item__user_text-right::after {
         content: ''; 
-        position: absolute; /* Абсолютное позиционирование */
-        left: -44px; top: 55px; /* Положение треугольника */
-        border: 15px solid transparent;  /* Прозрачные границы */
-        border-right: 30px solid $color-beige; /* Добавляем треугольник */}
+        position: absolute; 
+        left: -44px; top: 55px; 
+        border: 15px solid transparent;  
+        border-right: 30px solid $color-beige; }
 
 .testimonials-item__user_text-left{
     font-family:$default-font;
@@ -65,8 +65,8 @@ align-items: center;}
 }
 .testimonials-item__user_text-left::after {
     content: ''; 
-    position: absolute; /* Абсолютное позиционирование */
-    right: -44px; top: 55px; /* Положение треугольника */
+    position: absolute; 
+    right: -44px; top: 55px; 
     border: 15px solid transparent; 
     border-left: 30px solid $color-beige;}
 
