@@ -415,17 +415,57 @@ p {
   text-transform: uppercase;
 }
 
-.path {
+.about-path {
   background-color: #f6f1eb;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.path__paragraph1, .path__paragraph2, .path__paragraph3 {
+.about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
   padding-bottom: 30px;
-  width: 75%;
+  width: 75vw;
 }
-.path__paragraph1 {
-  padding-top: 15px;
+.about-path__paragraph1 {
+  padding-top: 20px;
+}
+
+.about-education {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.about-education .title_education {
+  margin-top: 5%;
+}
+
+.about-ages {
+  display: flex;
+  height: 19vw;
+  justify-content: space-around;
+  margin-top: 6%;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 26%;
+  height: 73%;
+}
+.about-card .title_age {
+  background-color: #e8dac4;
+  width: 55%;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 26px;
+  border-radius: 1pc;
+}
+.about-card__description {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 24px;
 }
