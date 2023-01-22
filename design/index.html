@@ -19,15 +19,17 @@
 	<!-- header -->
 	<header class="header">
 		<div class="wrapper">
-			<a href="./index.html" class="name-logo">Elena life coach</a>
-			<nav class="nav">
-				<ul class="nav__menu">
-					<li><a href="./about.html" class="nav__link">About me</a></li>
-					<li><a href="./services.html" class="nav__link">Services</a></li>
-					<li><a href="./testimonials.html" class="nav__link">Testimonials</a></li>
-					<li><a href="./contact.html" class="nav__link">Contact</a></li>
-				</ul>
-			</nav>
+			<div class="header__container">
+				<a href="./index.html" class="name-logo">Elena life coach</a>
+				<nav class="nav">
+					<ul class="nav__menu">
+						<li><a href="./about.html" class="nav__link">About me</a></li>
+						<li><a href="./services.html" class="nav__link">Services</a></li>
+						<li><a href="./testimonials.html" class="nav__link">Testimonials</a></li>
+						<li><a href="./contact.html" class="nav__link">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 			<div class="hamburger">
 				<span class="hamburger__line"></span>
 				<span class="hamburger__line"></span>
@@ -87,9 +89,9 @@
 						<button class="button button_home-services-btn_small">More</button>
 						<button class="button button_home-services-btn_small">Book</button>
 					</div>
+					<button class="button button_home-services-btn_center">More services</button>
 				</div>
 			</div>
-			<button class="button button_home-services-btn_center">More services</button>
 		</div>
 	</section>
 
@@ -133,25 +135,32 @@
 	<!-- footer -->
 	<footer class="footer">
 		<div class="wrapper">
-			<img src="./assets/images/footer-branch.svg" alt="left branch image" />
-			<nav class="nav">
-				<ul class="nav__menu">
-					<li><a href="./about.html" class="nav__link">About me</a></li>
-					<li><a href="./services.html" class="nav__link">Services</a></li>
-					<li><a href="./testimonials.html" class="nav__link">Testimonials</a></li>
-					<li><a href="./contact.html" class="nav__link">Contact</a></li>
-				</ul>
-			</nav>
-			<a href="./index.html" class="name-logo">Elena life coach</a>
-			<div class="footer__socials">
-				<a href="" class="footer__socials-link"><img src="./assets/icons/inst.svg" alt="instagram logo"
-						class="footer__socials-icon" /></a>
-				<a href="" class="footer__socials-link"><img src="./assets/icons/telegram.svg" alt="telegram logo"
-						class="footer__socials-icon" /></a>
-				<a href="" class="footer__socials-link"><img src="./assets/icons/fb.svg" alt="facebook logo"
-						class="footer__socials-icon" /></a>
+			<div class="footer__container">
+				<img src="./assets/images/footer-branch.svg" alt="left branch image"
+					class="footer__branch footer__branch_left" />
+				<nav class="nav">
+					<ul class="nav__menu">
+						<li><a href="./about.html" class="nav__link">About me</a></li>
+						<li><a href="./services.html" class="nav__link">Services</a></li>
+						<li><a href="./testimonials.html" class="nav__link">Testimonials</a></li>
+						<li><a href="./contact.html" class="nav__link">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="footer__bottom">
+					<a href="./index.html" class="name-logo">Elena life coach</a>
+					<div class="footer__socials">
+						<a href="https://www.instagram.com/" target="_blank" class="footer__socials-link"><img
+								src="./assets/icons/inst.svg" alt="instagram logo" class="footer__socials-icon" /></a>
+						<a href="https://telegram.org/" target="_blank" class="footer__socials-link"><img
+								src="./assets/icons/telegram.svg" alt="telegram logo"
+								class="footer__socials-icon" /></a>
+						<a href="https://www.facebook.com/" target="_blank" class="footer__socials-link"><img
+								src="./assets/icons/fb.svg" alt="facebook logo" class="footer__socials-icon" /></a>
+					</div>
+				</div>
+				<img src="./assets/images/footer-branch.svg" alt="right branch image"
+					class="footer__branch footer__branch_right" />
 			</div>
-			<img src="./assets/images/footer-branch.svg" alt="right branch image" />
 		</div>
 	</footer>
 
