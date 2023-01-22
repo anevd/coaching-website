@@ -563,17 +563,10 @@ p {
   padding: 5% 0 3% 0;
 }
 
-.services-faq-container {
-  padding: 0 12% 11% 12%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .services-faq-section {
-  margin: 2% 0 2% 0;
+  margin: 2% 12% 2% 12%;
   padding: 30px;
-  border: 1px solid red;
+  display: flex;
   background-color: #f6f1eb;
   border-radius: 15px;
 }
@@ -585,13 +578,24 @@ p {
   letter-spacing: 0.02em;
 }
 .services-faq-section__answer {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  height: 0;
   padding: 0 12% 0 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 140%;
   letter-spacing: 0.02em;
 }
+.services-faq-section__answer_visible {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  transition: opacity 0.5s ease-in;
+}
 .services-faq-section__plus {
+  cursor: pointer;
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -601,6 +605,8 @@ p {
   background-repeat: no-repeat;
 }
 .services-faq-section__cross {
+  display: none;
+  cursor: pointer;
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -609,6 +615,10 @@ p {
   background-size: 100% 4px, 4px 100%;
   background-repeat: no-repeat;
   transform: rotate(45deg);
+}
+
+.services-faq-section:nth-child(6) {
+  margin-bottom: 13%;
 }
 
 .testimonials-item {
