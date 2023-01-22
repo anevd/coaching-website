@@ -3,3 +3,112 @@
 // Катя
 
 // Женя
+.services-howwork {
+    background-color: $color-beige;    
+}
+
+.services-howwork-title {
+    padding: 5% 0 8% 0;
+}
+
+.services-howwork-container {
+    padding: 0 0 15% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-howwork-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2% 0 2%;
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85px;
+        height: 85px;
+        background-color: $color-beige-dark;
+        border-radius: 50%;
+        font-family: $title-font;
+        font-size: 64px;
+    }
+
+    &__title {
+        padding: 5% 0 7% 0;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+}
+.services-faq {
+    background-color: white;
+}
+
+.services-faq-title {
+    padding: 5% 0 3% 0;
+}
+
+.services-faq-container {
+    padding: 0 12% 11% 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services-faq-section {
+    margin: 2% 0 2% 0;
+    padding: 30px;
+    border: 1px solid red;
+    background-color: $color-beige;
+    border-radius: 15px;
+
+    &__question {
+        padding: 0 0 2% 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+    }
+
+    &__answer {
+        padding: 0 12% 0 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+    }
+
+    &__plus {
+        display:inline-block;
+        width:32px;
+        height:32px;
+        background:
+            linear-gradient(#3F3C20,#3F3C20),
+            linear-gradient(#3F3C20,#3F3C20);
+        background-position:center;
+        background-size: 100% 4px,4px 100%;
+        background-repeat:no-repeat;
+    }
+
+    &__cross {
+        display:inline-block;
+        width:32px;
+        height:32px;
+        background:
+            linear-gradient(#3F3C20,#3F3C20),
+            linear-gradient(#3F3C20,#3F3C20);
+        background-position:center;
+        background-size: 100% 4px,4px 100%;
+        background-repeat:no-repeat;
+        transform: rotate(45deg);
+    }
+}
