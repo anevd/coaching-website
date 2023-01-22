@@ -536,3 +536,15 @@ p {
 .home-testimonials__item-date {
   font-weight: 300;
 }
+
+.home-question {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.home-question__text {
+  margin: 13px 0 70px 0;
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
