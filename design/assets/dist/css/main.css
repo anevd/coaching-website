@@ -719,18 +719,20 @@ p {
 }
 .contact__info-block {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 15%;
 }
 .contact__text {
   font-size: 3vh;
+  width: 90%;
+  line-height: 140%;
 }
 .contact__text_email-link {
   text-decoration: none;
   font-weight: 600;
 }
 .contact__img {
-  height: 92vh;
+  height: 100vh;
 }
 .contact__social {
   margin-top: 10%;
@@ -744,5 +746,4 @@ p {
   width: 20px;
   background-color: #3f3c20;
   margin-right: 6%;
-  padding-right: 4.9%;
 }

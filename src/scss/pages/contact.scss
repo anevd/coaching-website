@@ -23,18 +23,20 @@
     }
     &__info-block{
         display: flex;
-        flex-direction: row;
+        justify-content: space-between;
         margin-bottom: 15%;
     }
     &__text{
         font-size: 3vh;
+        width: 90%;
+        line-height: 140%;
         &_email-link{
             text-decoration: none;
             font-weight: 600;
         }
     }
     &__img{
-        height: 92vh;
+        height: 100vh;
     }
     &__social{
         margin-top: 10%;
@@ -47,6 +49,5 @@
     height: 20px;
     width: 20px;
     background-color:$color-text;
-    margin-right: 6%; 
-    padding-right: 4.9%;   
+    margin-right: 6%;    
 }
