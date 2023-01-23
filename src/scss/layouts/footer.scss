@@ -1,1 +1,62 @@
 @import "./variables.scss";
+
+.footer {
+	position: relative;
+	background-color: $color-green;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 305px;
+		padding: 3.5% 0 4% 0;
+	}
+	.nav {
+		&__link {
+			color: #fff;
+			&:hover {
+				color: #fff;
+				text-shadow: 0px 0px 10px #fff;
+			}
+		}
+	}
+	.name-logo {
+		color: #fff;
+		&:hover {
+			color: #fff;
+			text-shadow: 0px 0px 10px #fff;
+		}
+	}
+	&__bottom {
+		width: 13%;
+		min-height: 90px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__socials {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		&-icon {
+			&:hover {
+				border-radius: 50%;
+				box-shadow: 0px 0px 10px #fff;
+			}
+		}
+	}
+	&__branch {
+		position: absolute;
+		&_left {
+			left: 0;
+			top: 0;
+			transform: scale(1, 1) rotate(-15deg);
+		}
+		&_right {
+			right: 0;
+			top: 0;
+			transform: scale(-1, 1) rotate(-15deg);
+		}
+	}
+}
