@@ -588,12 +588,14 @@ p {
   position: relative;
   padding: 60px 0 151px 0;
   background-color: #f6f1eb;
+  z-index: 1;
 }
 
 .home-testimonials__img-background {
   position: absolute;
   height: 100%;
   transform: translateY(-60px);
+  z-index: -1;
 }
 
 .home-testimonials__container {
@@ -643,6 +645,7 @@ p {
   letter-spacing: 0.02em;
 }
 
+/* ------------------------ Media queries ------------------------ */
 .testimonials-item {
   display: flex;
   flex-direction: row;

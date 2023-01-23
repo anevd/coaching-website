@@ -82,16 +82,18 @@
     position: relative;
     padding: 60px 0 151px 0;
     background-color: $color-beige;
+    z-index: 1;
 }
 
 .home-testimonials__img-background {
     position: absolute;
     height: 100%;
     transform: translateY(-60px);
+    z-index: -1;
 }
 
 .home-testimonials__container {
-    padding-left: 39.75%; //477px;
+    padding-left: 39.75%;
     padding-right: 55px;
     margin-top: 51px;
 }
@@ -99,7 +101,7 @@
 .home-testimonials__item {
     padding: 28px 33px 19px 33px;
     margin-bottom: 38px;
-    width: 100%; //668px;
+    width: 100%;
     min-height: 207px;
     letter-spacing: 0.02em;
     background-color: #FFFFFF;
@@ -136,4 +138,25 @@
     font-size: 36px;
     line-height: 140%;
     letter-spacing: 0.02em;
+}
+
+/* ------------------------ Media queries ------------------------ */
+@media screen and (max-width: $large-desktop) {
+
+}
+
+@media screen and (max-width: $desktop) {
+
+}
+
+@media screen and (max-width: $big-tablet) {
+
+}
+
+@media screen and (max-width: $tablet) {
+
+}
+
+@media screen and (max-width: $mobile) {
+
 }
