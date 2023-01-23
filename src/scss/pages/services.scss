@@ -59,13 +59,13 @@
 
 .services-faq-section {
     margin: 2% 12% 2% 12%;
-    padding: 30px;
+    padding: 20px 30px 10px 30px;
     display: flex;
     background-color: $color-beige;
     border-radius: 15px;
 
     &__question {
-        padding: 0 0 2% 0;
+        padding-bottom: 10px;
         font-weight: 600;
         font-size: 24px;
         line-height: 140%;
@@ -93,7 +93,6 @@
 
     &__plus {
         cursor: pointer;
-        display:inline-block;
         width:32px;
         height:32px;
         background:
@@ -107,7 +106,6 @@
     &__cross {
         display: none;
         cursor: pointer;
-        display:inline-block;
         width:32px;
         height:32px;
         background:
