@@ -3,3 +3,123 @@
 // Катя
 
 // Женя
+.services-howwork {
+    background-color: $color-beige;    
+}
+
+.services-howwork-title {
+    padding: 5% 0 8% 0;
+}
+
+.services-howwork-container {
+    padding: 0 0 15% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-howwork-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2% 0 2%;
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85px;
+        height: 85px;
+        background-color: $color-beige-dark;
+        border-radius: 50%;
+        font-family: $title-font;
+        font-size: 64px;
+    }
+
+    &__title {
+        padding: 5% 0 7% 0;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+}
+.services-faq {
+    background-color: white;
+}
+
+.services-faq-title {
+    padding: 5% 0 3% 0;
+}
+
+.services-faq-section {
+    margin: 2% 12% 2% 12%;
+    padding: 30px;
+    display: flex;
+    background-color: $color-beige;
+    border-radius: 15px;
+
+    &__question {
+        padding: 0 0 2% 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+    }
+
+    &__answer {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        height: 0;
+        padding: 0 12% 0 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+    }
+
+    &__answer_visible {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        transition: opacity 0.5s ease-in;
+    }
+
+    &__plus {
+        cursor: pointer;
+        display:inline-block;
+        width:32px;
+        height:32px;
+        background:
+            linear-gradient(#3F3C20,#3F3C20),
+            linear-gradient(#3F3C20,#3F3C20);
+        background-position:center;
+        background-size: 100% 4px,4px 100%;
+        background-repeat:no-repeat;
+    }
+
+    &__cross {
+        display: none;
+        cursor: pointer;
+        display:inline-block;
+        width:32px;
+        height:32px;
+        background:
+            linear-gradient(#3F3C20,#3F3C20),
+            linear-gradient(#3F3C20,#3F3C20);
+        background-position:center;
+        background-size: 100% 4px,4px 100%;
+        background-repeat:no-repeat;
+        transform: rotate(45deg);
+    }
+}
+
+.services-faq-section:nth-child(6) {
+    margin-bottom: 13%;
+}
