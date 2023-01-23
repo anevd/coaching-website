@@ -548,9 +548,9 @@ p {
   border-radius: 30px;
   line-height: 140%;
   padding: 4% 5% 4% 5%;
-  margin-left: 65px;
-  width: 906px;
-  height: 309px;
+  /*margin-left: 65px;*/
+  width: 93%;
+  height: min-content;
   position: relative;
 }
 
@@ -570,9 +570,9 @@ p {
   border-radius: 30px;
   line-height: 140%;
   padding: 4% 5% 4% 5%;
-  margin-right: 65px;
-  width: 906px;
-  height: 309px;
+  /*margin-right: 65px;*/
+  width: 93%;
+  height: min-content;
   position: relative;
 }
 
