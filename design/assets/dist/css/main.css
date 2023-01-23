@@ -584,3 +584,26 @@ p {
   border: 15px solid transparent;
   border-left: 30px solid #f6f1eb;
 }
+
+.contact {
+  background-color: #fff;
+  margin-top: 5%;
+}
+.contact__title {
+  font-family: "Oranienbaum", serif;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 8%;
+}
+.contact__container {
+  margin-bottom: 12%;
+  display: flex;
+  flex-direction: row;
+}
+.contact__box {
+  display: flex;
+  flex-direction: column;
+}
+.contact__img {
+  height: 60vh;
+}
