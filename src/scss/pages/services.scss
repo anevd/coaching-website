@@ -65,7 +65,7 @@
     border-radius: 15px;
 
     &__question {
-        padding-bottom: 10px;
+        padding: 0 10px 10px 0;
         font-weight: 600;
         font-size: 24px;
         line-height: 140%;
@@ -145,7 +145,13 @@
     // Катя
     
     // Женя
-    
+    .services-howwork-container {
+        flex-wrap: wrap;
+    }
+    .services-howwork-section {
+        max-width: 50%;
+        padding: 2%;
+    }
 }
 
 @media screen and (max-width: $tablet) {
@@ -154,6 +160,28 @@
     
     // Женя
     
+    .services-howwork-section {
+        
+        &__title {
+            font-size: 20px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    .services-faq-section {
+        padding: 20px 4% 10px 4%;
+
+        &__question {
+            font-size: 20px;
+        }
+
+        &__answer {
+            font-size: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: $big-mobile) {
@@ -161,7 +189,36 @@
     // Катя
     
     // Женя
+    .services-howwork-section {
+        max-width: 100%;
+        padding: 2% 7% 2% 7%;
+    }
     
+    .services-faq-section {
+        margin: 2% 7% 2% 7%;
+        padding: 12px 5% 6px 5%;
+
+        &__question {
+            padding: 0 10px 6px 0;
+        }
+        
+        &__answer {
+
+            &_visible {
+                padding: 0 12% 6px 0;
+            }
+        }
+
+        &__plus {
+            width:26px;
+            height:26px;
+        }
+    
+        &__cross {
+            width:26px;
+            height:26px;
+        }
+    }
 }
 
 @media screen and (max-width: $mobile) {
@@ -170,4 +227,25 @@
     
     // Женя
     
+    .services-howwork-section {
+        
+        &__title {
+            font-size: 18px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+    .services-faq-section {
+        &__question {
+            font-size: 18px;
+        }
+
+        &__answer {
+            font-size: 18px;
+        }
+
+    }
 }
