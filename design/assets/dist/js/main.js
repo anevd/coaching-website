@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/app.scss */ \"./src/scss/app.scss\");\n\r\n\r\n// Раскрывающийся блок в секции \"Вопрос-ответ\"\r\nlet plus = document.querySelectorAll(\".services-faq-section__plus\");\r\nlet cross = document.querySelectorAll(\".services-faq-section__cross\");\r\nlet answer = document.querySelectorAll(\".services-faq-section__answer\");\r\nfor (let i = 0; i < plus.length; i++) {\r\n    plus[i].addEventListener(\"click\", function () {\r\n        answer[i].classList.add(\"services-faq-section__answer_visible\");\r\n        plus[i].style.display = \"none\";\r\n        cross[i].style.display = \"block\";\r\n    });\r\n}\r\n\r\n\r\nfor (let i = 0; i < plus.length; i++) {\r\n    cross[i].addEventListener(\"click\", function () {\r\n        answer[i].classList.remove(\"services-faq-section__answer_visible\");\r\n        plus[i].style.display = \"block\";\r\n        cross[i].style.display = \"none\";\r\n    });\r\n}\n\n//# sourceURL=webpack://design/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/app.scss */ \"./src/scss/app.scss\");\n\n\n//# sourceURL=webpack://design/./src/index.js?");
 
 /***/ })
 
