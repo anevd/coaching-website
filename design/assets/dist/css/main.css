@@ -424,6 +424,7 @@ p {
 .footer {
   position: relative;
   background-color: #97a179;
+  overflow: hidden;
 }
 .footer__container {
   display: flex;
@@ -435,7 +436,7 @@ p {
 }
 .footer .nav__link {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 .footer .nav__link:hover {
   color: #fff;
@@ -443,14 +444,14 @@ p {
 }
 .footer .name-logo {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 .footer .name-logo:hover {
   color: #fff;
   text-shadow: 0px 0px 10px #fff;
 }
 .footer__bottom {
-  width: 13%;
+  width: 15%;
   min-height: 90px;
   display: flex;
   flex-direction: column;
@@ -468,6 +469,7 @@ p {
 }
 .footer__branch {
   position: absolute;
+  overflow: hidden;
 }
 .footer__branch_left {
   left: 0;
@@ -495,18 +497,44 @@ p {
     min-height: 230px;
   }
   .footer__bottom {
-    width: 20%;
+    width: 25%;
   }
   .footer__branch_left, .footer__branch_right {
     height: 80%;
   }
 }
 @media screen and (max-width: 768px) {
-  .footer .nav__link {
-    font-size: 0.9rem;
+  .footer__container {
+    min-height: 310px;
+    padding: 30px 0;
+  }
+  .footer .nav {
+    width: 50%;
+  }
+  .footer .nav__menu {
+    flex-direction: column;
+    height: 170px;
+  }
+  .footer .nav__link_home {
+    display: block;
   }
   .footer .name-logo {
-    font-size: 0.9rem;
+    display: none;
+  }
+  .footer__bottom {
+    width: 35%;
+    min-height: 20px;
+  }
+  .footer__branch {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__bottom {
+    width: 55%;
+  }
+  .footer__branch_left, .footer__branch_right {
+    height: 80%;
   }
 }
 .header {
@@ -524,7 +552,7 @@ p {
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.02em;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 .name-logo:hover {
   color: #848271;
@@ -543,7 +571,7 @@ p {
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.02em;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 .nav__link:hover {
   color: #848271;
@@ -556,9 +584,46 @@ p {
   display: none;
 }
 
+@media screen and (max-width: 1025px) {
+  .header .name-logo {
+    font-size: 1.125rem;
+  }
+  .nav {
+    width: 70%;
+  }
+  .nav__menu {
+    justify-content: space-between;
+  }
+  .nav__link {
+    font-size: 1.125rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .header .name-logo {
     display: none;
+  }
+  .header .nav__menu {
+    position: absolute;
+    align-items: center;
+    left: -100%;
+    top: 0;
+    z-index: 2;
+    padding: 30px 40px;
+    flex-direction: column;
+    height: 50vh;
+    background-color: #e8dac4;
+    width: 70%;
+    opacity: 0.9;
+    transition: 0.6s all;
+  }
+  .header .nav__menu_active {
+    left: 0;
+  }
+  .header .nav__link {
+    font-size: 1.25rem;
+  }
+  .header .nav__link_home {
+    display: block;
   }
   .hamburger {
     z-index: 2;
@@ -584,29 +649,6 @@ p {
   }
   .hamburger_active .hamburger__line:nth-child(3) {
     transform: rotate(45deg) translate(-3px, -10px);
-  }
-  .name-logo {
-    font-size: 0.9rem;
-  }
-  .nav__menu {
-    position: absolute;
-    align-items: center;
-    left: -100%;
-    top: 0;
-    z-index: 2;
-    padding: 30px 40px;
-    flex-direction: column;
-    height: 80vh;
-    background-color: #e8dac4;
-    width: 70%;
-    opacity: 0.9;
-    transition: 0.6s all;
-  }
-  .nav__menu_active {
-    left: 0;
-  }
-  .nav__link_home {
-    display: block;
   }
 }
 .home-services {
