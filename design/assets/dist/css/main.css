@@ -591,14 +591,124 @@ p {
   width: 26.75vw;
 }
 
+.services-howwork {
+  background-color: #f6f1eb;
+}
+
+.services-howwork-title {
+  padding: 5% 0 8% 0;
+}
+
+.services-howwork-container {
+  padding: 0 0 15% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-howwork-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2% 0 2%;
+}
+.services-howwork-section__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 85px;
+  background-color: #e8dac4;
+  border-radius: 50%;
+  font-family: "Oranienbaum", serif;
+  font-size: 64px;
+}
+.services-howwork-section__title {
+  padding: 5% 0 7% 0;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+}
+.services-howwork-section__text {
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.services-faq {
+  background-color: white;
+}
+
+.services-faq-title {
+  padding: 5% 0 3% 0;
+}
+
+.services-faq-section {
+  margin: 2% 12% 2% 12%;
+  padding: 30px;
+  display: flex;
+  background-color: #f6f1eb;
+  border-radius: 15px;
+}
+.services-faq-section__question {
+  padding: 0 0 2% 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+.services-faq-section__answer {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  height: 0;
+  padding: 0 12% 0 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+.services-faq-section__answer_visible {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  transition: opacity 0.5s ease-in;
+}
+.services-faq-section__plus {
+  cursor: pointer;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(#3F3C20, #3F3C20), linear-gradient(#3F3C20, #3F3C20);
+  background-position: center;
+  background-size: 100% 4px, 4px 100%;
+  background-repeat: no-repeat;
+}
+.services-faq-section__cross {
+  display: none;
+  cursor: pointer;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(#3F3C20, #3F3C20), linear-gradient(#3F3C20, #3F3C20);
+  background-position: center;
+  background-size: 100% 4px, 4px 100%;
+  background-repeat: no-repeat;
+  transform: rotate(45deg);
+}
+
+.services-faq-section:nth-child(6) {
+  margin-bottom: 13%;
+}
+
 .testimonials-item {
   display: flex;
-  flex-direction: row;
   margin-top: 6%;
+  justify-content: space-between;
 }
 
 .testimonials-item__user_img {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .testimonials-item__user_name {
@@ -619,6 +729,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 18%;
+}
+
+.testimonials-item__user_text {
+  width: 75%;
 }
 
 .testimonials-item__user_text-right {
@@ -628,9 +743,7 @@ p {
   border-radius: 30px;
   line-height: 140%;
   padding: 4% 5% 4% 5%;
-  margin-left: 65px;
-  width: 906px;
-  height: 309px;
+  height: min-content;
   position: relative;
 }
 
@@ -650,9 +763,7 @@ p {
   border-radius: 30px;
   line-height: 140%;
   padding: 4% 5% 4% 5%;
-  margin-right: 65px;
-  width: 906px;
-  height: 309px;
+  height: min-content;
   position: relative;
 }
 
@@ -663,4 +774,56 @@ p {
   top: 55px;
   border: 15px solid transparent;
   border-left: 30px solid #f6f1eb;
+}
+
+.contact {
+  background-color: #fff;
+  margin: 5%, 7%, 0%, 7%;
+}
+.contact__container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+  justify-content: space-around;
+}
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 5%;
+}
+.contact__subtitle {
+  font-size: 3vh;
+  margin-bottom: 15%;
+  font-weight: 600;
+}
+.contact__info-block {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15%;
+}
+.contact__text {
+  font-size: 3vh;
+}
+.contact__text_email-link {
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact__img {
+  height: 92vh;
+}
+.contact__social {
+  margin-top: 10%;
+}
+.contact__social-link {
+  margin-right: 10%;
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+  background-color: #3f3c20;
+  margin-right: 6%;
+  padding-right: 4.9%;
 }
