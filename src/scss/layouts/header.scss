@@ -81,7 +81,7 @@
 				z-index: 2;
 				padding: 30px 40px;
 				flex-direction: column;
-				height: 80vh;
+				height: 50vh;
 				background-color: $color-beige-dark;
 				width: 70%;
 				opacity: 0.9;
@@ -91,6 +91,7 @@
 				}
 			}
 			&__link {
+				font-size: 1.25rem;
 				&_home {
 					display: block;
 				}

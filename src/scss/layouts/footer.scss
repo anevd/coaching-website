@@ -3,6 +3,7 @@
 .footer {
 	position: relative;
 	background-color: $color-green;
+	overflow: hidden;
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -50,6 +51,7 @@
 	}
 	&__branch {
 		position: absolute;
+		overflow: hidden;
 		&_left {
 			left: 0;
 			top: 0;

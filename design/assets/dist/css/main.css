@@ -424,6 +424,7 @@ p {
 .footer {
   position: relative;
   background-color: #97a179;
+  overflow: hidden;
 }
 .footer__container {
   display: flex;
@@ -468,6 +469,7 @@ p {
 }
 .footer__branch {
   position: absolute;
+  overflow: hidden;
 }
 .footer__branch_left {
   left: 0;
@@ -608,7 +610,7 @@ p {
     z-index: 2;
     padding: 30px 40px;
     flex-direction: column;
-    height: 80vh;
+    height: 50vh;
     background-color: #e8dac4;
     width: 70%;
     opacity: 0.9;
@@ -616,6 +618,9 @@ p {
   }
   .header .nav__menu_active {
     left: 0;
+  }
+  .header .nav__link {
+    font-size: 1.25rem;
   }
   .header .nav__link_home {
     display: block;
