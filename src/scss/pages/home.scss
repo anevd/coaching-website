@@ -146,3 +146,176 @@
 
 
 // Альбина
+//section "services"
+.home-services {
+    padding: 60px 0 74px 0;
+}
+
+.home-services__container {
+    display: flex;
+    justify-content: center;
+    margin: 52px 0 78px 0;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.home-services__item {
+    padding: 34px 30px;
+    width: 360px;
+    height: 485px;
+    text-align: center;
+    background-color: $color-beige;
+    border-radius: 15px;
+}
+
+.home-services__item-title {
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+.home-services__item-text-container {
+    min-height: 198px;
+}
+
+.home-services__item-text, .home-services__item-time, 
+.home-services__item-amount {
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+}
+
+.home-services__item-time-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+    gap: 5.3px;
+}
+
+.home-services__item-amount {
+    margin-top: 30px;
+}
+
+.home-services__item-price {
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.home-services__buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_home-services-btn_small {
+    width: 137px;
+    height: 58px;   
+}
+
+.button_home-services-btn_center {
+    margin: 0 auto;
+    display: block;
+}
+
+//section "testimonials"
+.home-testimonials {
+    position: relative;
+    padding: 60px 0 151px 0;
+    background-color: $color-beige;
+    z-index: 1;
+}
+
+.home-testimonials__img-background {
+    position: absolute;
+    height: 100%;
+    transform: translateY(-60px);
+    z-index: -1;
+}
+
+.home-testimonials__container {
+    padding-left: 39.75%;
+    padding-right: 55px;
+    margin-top: 51px;
+}
+
+.home-testimonials__item {
+    padding: 28px 33px 19px 33px;
+    margin-bottom: 38px;
+    width: 100%;
+    min-height: 207px;
+    letter-spacing: 0.02em;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.home-testimonials__item-text {
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.home-testimonials__item-author, .home-testimonials__item-date {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.home-testimonials__item-author {
+    margin-top: 22px;
+    font-weight: 600;
+}
+
+.home-testimonials__item-date {
+    font-weight: 300;
+}
+
+//section "home-question"
+.home-question {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.home-question__text {
+    margin: 13px 0 70px 0;
+    font-size: 36px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+}
+
+/* ------------------------ Media queries ------------------------ */
+@media screen and (max-width: $large-desktop) {
+    // Диана
+
+    // Альбина
+}
+
+@media screen and (max-width: $desktop) {
+    // Диана
+    
+    // Альбина
+}
+
+@media screen and (max-width: $big-tablet) {
+    // Диана
+    
+    // Альбина
+}
+
+@media screen and (max-width: $tablet) {
+    // Диана
+    
+    // Альбина
+}
+
+@media screen and (max-width: $big-mobile) {
+    // Диана
+    
+    // Альбина
+}
+
+@media screen and (max-width: $mobile) {
+    // Диана
+    
+    // Альбина
+}
