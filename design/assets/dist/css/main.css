@@ -416,42 +416,6 @@ p {
   text-transform: uppercase;
 }
 
-.about-quote {
-  width: 100%;
-  height: 50vh;
-  background-color: #F6F1EB;
-}
-.about-quote__wrapper {
-  display: flex;
-  width: 53vw;
-  padding: 7vh 0 0 0;
-}
-.about-quote_left {
-  font-family: "Oranienbaum", serif;
-  font-size: 8vw;
-  color: #97A179;
-}
-.about-quote__text {
-  font-family: "Oranienbaum", serif;
-  font-size: 3vw;
-  color: #3F3C20;
-  margin: 10vh 0 0 1vw;
-}
-.about-quote_right {
-  font-family: "Oranienbaum", serif;
-  font-size: 8vw;
-  color: #97A179;
-  margin: 23vh 0 0 0;
-  line-height: 0.5;
-}
-.about-quote__author {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5vw;
-  color: #3F3C20;
-  text-align: right;
-  width: 53vw;
-}
-
 .footer {
   position: relative;
   background-color: #97a179;
@@ -545,6 +509,86 @@ p {
 }
 .nav__link:hover {
   color: #848271;
+}
+
+.about-quote {
+  width: 100%;
+  height: 50vh;
+  background-color: #F6F1EB;
+}
+.about-quote__wrapper {
+  display: flex;
+  width: 53vw;
+  padding: 7vh 0 0 0;
+}
+.about-quote_left {
+  font-family: "Oranienbaum", serif;
+  font-size: 8vw;
+  color: #97A179;
+}
+.about-quote__text {
+  margin: 10vh 0 0 1vw;
+  font-family: "Oranienbaum", serif;
+  font-size: 3vw;
+  color: #3F3C20;
+}
+.about-quote_right {
+  margin: 23vh 0 0 0;
+  font-family: "Oranienbaum", serif;
+  font-size: 8vw;
+  color: #97A179;
+  line-height: 0.5;
+}
+.about-quote__author {
+  width: 53vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  color: #3F3C20;
+  text-align: right;
+}
+
+.about-Elena {
+  width: 100%;
+  height: 92vh;
+}
+.about-Elena__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
+}
+.about-Elena__photo {
+  width: 40%;
+}
+.about-Elena__photo img {
+  width: 100%;
+}
+.about-Elena__text {
+  margin-left: 4vw;
+  width: 44%;
+}
+.about-Elena__text_title {
+  margin-bottom: 0;
+  font-family: "Oranienbaum", serif;
+  font-size: 4vw;
+  color: #3F3C20;
+}
+.about-Elena__text_first {
+  margin-top: 7vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  color: #3F3C20;
+}
+.about-Elena__text_second {
+  margin-top: 7vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  color: #3F3C20;
+}
+.about-Elena__background {
+  position: absolute;
+  top: 60vh;
+  right: 0;
+  width: 26.75vw;
 }
 
 .testimonials-item {
