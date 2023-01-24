@@ -59,3 +59,9 @@ p {
 	color: $color-text;
 	text-transform: uppercase;
 }
+
+@media screen and (max-width: $desktop) {
+	.wrapper {
+		max-width: 90%;
+	}
+}
