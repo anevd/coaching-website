@@ -824,6 +824,64 @@ p {
   width: 26.75vw;
 }
 
+.about-path {
+  background-color: #f6f1eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
+  padding-bottom: 30px;
+  width: 75vw;
+}
+.about-path__paragraph1 {
+  padding-top: 20px;
+}
+
+.about-education {
+  display: flex;
+  flex-direction: column;
+}
+.about-education .title_education {
+  margin-top: 5%;
+}
+
+.about-ages {
+  display: flex;
+  height: 19vw;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 26%;
+  height: 73%;
+  padding: 30px;
+}
+.about-card .title_age {
+  background-color: #e8dac4;
+  width: 56%;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 26px;
+  border-radius: 1pc;
+  padding-left: 60pt;
+  padding-right: 60pt;
+}
+.about-card__description {
+  font-weight: bold;
+  font-size: 24px;
+  width: 20vw;
+  text-align: center;
+}
+
 .services-howwork {
   background-color: #f6f1eb;
 }
