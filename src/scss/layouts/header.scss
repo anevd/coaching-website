@@ -15,7 +15,7 @@
 	text-decoration: none;
 	font-weight: 600;
 	letter-spacing: 0.02em;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	&:hover {
 		color: #848271;
 	}
@@ -33,7 +33,7 @@
 		text-decoration: none;
 		font-weight: 600;
 		letter-spacing: 0.02em;
-		font-size: 1rem;
+		font-size: 1.25rem;
 		&:hover {
 			color: #848271;
 		}
@@ -51,6 +51,20 @@
 }
 
 @media screen and (max-width: $big-tablet) {
+	.header {
+		.name-logo {
+			font-size: 1.125rem;
+		}
+	}
+	.nav {
+		width: 70%;
+		&__menu {
+			justify-content: space-between;
+		}
+		&__link {
+			font-size: 1.125rem;
+		}
+	}
 }
 
 @media screen and (max-width: $tablet) {
@@ -85,9 +99,6 @@
 				transform: rotate(45deg) translate(-3px, -10px);
 			}
 		}
-	}
-	.name-logo {
-		font-size: 0.9rem;
 	}
 	.nav {
 		&__menu {
