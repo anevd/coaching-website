@@ -57,6 +57,7 @@
 .coach-give {
     height: 792px;
     width: 100%;
+    position: relative;
 
     &__title {
         font-family: $title-font;
@@ -78,9 +79,7 @@
 
         &-text {
             margin-bottom: 30px;
-            font-family: $default-font;
-            font-style: normal;
-            font-weight: 400;
+
             font-size: 24px;
             line-height: 140%;
             letter-spacing: 0.02em;
