@@ -1149,7 +1149,7 @@ p {
   border-radius: 15px;
 }
 .services-faq-section__question {
-  padding-bottom: 10px;
+  padding: 0 10px 10px 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 140%;
@@ -1197,6 +1197,70 @@ p {
   margin-bottom: 13%;
 }
 
+@media screen and (max-width: 1025px) {
+  .services-howwork-container {
+    flex-wrap: wrap;
+  }
+  .services-howwork-section {
+    max-width: 50%;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services-howwork-section__title {
+    font-size: 20px;
+  }
+  .services-howwork-section__text {
+    font-size: 20px;
+  }
+  .services-faq-section {
+    padding: 20px 4% 10px 4%;
+  }
+  .services-faq-section__question {
+    font-size: 20px;
+  }
+  .services-faq-section__answer {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services-howwork-section {
+    max-width: 100%;
+    padding: 2% 7% 2% 7%;
+  }
+  .services-faq-section {
+    margin: 2% 7% 2% 7%;
+    padding: 12px 5% 6px 5%;
+  }
+  .services-faq-section__question {
+    padding: 0 10px 6px 0;
+  }
+  .services-faq-section__answer_visible {
+    padding: 0 12% 6px 0;
+  }
+  .services-faq-section__plus {
+    width: 26px;
+    height: 26px;
+  }
+  .services-faq-section__cross {
+    width: 26px;
+    height: 26px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .services-howwork-section__title {
+    font-size: 18px;
+  }
+  .services-howwork-section__text {
+    font-size: 18px;
+  }
+  .services-faq-section__question {
+    font-size: 18px;
+  }
+  .services-faq-section__answer {
+    font-size: 18px;
+  }
+}
 .testimonials-item {
   display: flex;
   margin-top: 6%;
