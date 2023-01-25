@@ -100,7 +100,7 @@ left: 899px; top: 55px;
         height: min-content;
         }
         
-            .testimonials-item__user_text-left::after {
+            .testimonials-item__user_text-block::after {
                 display: none;
                 }
                 .testimonials-item:nth-child(2n+1) {display:flex;

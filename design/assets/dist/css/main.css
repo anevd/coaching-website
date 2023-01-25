@@ -1197,10 +1197,6 @@ p {
   margin-bottom: 13%;
 }
 
-.testimonials-item__title {
-  padding-top: 3%;
-}
-
 @media screen and (max-width: 1025px) {
   .services-howwork-container {
     flex-wrap: wrap;
@@ -1265,6 +1261,10 @@ p {
     font-size: 18px;
   }
 }
+.testimonials-item__title {
+  padding-top: 3%;
+}
+
 .testimonials-item {
   display: flex;
   margin-top: 6%;
@@ -1374,7 +1374,7 @@ p {
     padding: 4% 5% 4% 5%;
     height: min-content;
   }
-  .testimonials-item__user_text-left::after {
+  .testimonials-item__user_text-block::after {
     display: none;
   }
   .testimonials-item:nth-child(2n+1) {
