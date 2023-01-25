@@ -18,7 +18,7 @@
         &__item {
             padding: 34px 30px;
             width: 360px;
-            height: 485px;
+            min-height: 485px;
             text-align: center;
             background-color: $color-beige;
             border-radius: 15px;
@@ -92,6 +92,8 @@
         }
         
         &__container {
+            display: flex;
+            flex-direction: column;
             padding-left: 39.75%;
             padding-right: 55px;
             margin-top: 51px;
@@ -152,25 +154,29 @@
     // Диана
     
     // Альбина
+    .home-services {
+        padding: 60px 0 60px 0;
+
+            &__container {
+                margin: 52px 0 60px 0;
+            }
+    }
+
     .home-testimonials {
-        padding: 60px 0 151px 0;
-    }
+        padding: 60px 0 60px 0;
 
-    .home-testimonials__img-background {
-        display: none;
-    }
-    
-    .home-testimonials__container {
-        //padding-left: 15%;
-        //padding-right: 15%;
-        padding: 0 10px 0 10px;  
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home-testimonials__item {
-        width: 80%;
+            &__img-background {
+                display: none;
+            }
+        
+            &__container {
+                padding: 0 10px 0 10px;  
+                align-items: center;
+            }
+            
+            &__item {
+                width: 80%;
+            }
     }
 }
 
@@ -197,10 +203,17 @@
     // Диана
     
     // Альбина
+    .home-question__text {
+        margin: 13px 0 60px 0;
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: $mobile) {
     // Диана
     
     // Альбина
+    .button_home-services-btn_small {
+        width: 110px; 
+    }
 }
