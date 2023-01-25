@@ -421,6 +421,14 @@ p {
     max-width: 90%;
   }
 }
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 45px;
+  }
+  .button {
+    width: 300px;
+  }
+}
 .footer {
   position: relative;
   background-color: #97a179;
