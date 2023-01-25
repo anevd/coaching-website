@@ -3,6 +3,7 @@
 .footer {
 	position: relative;
 	background-color: $color-green;
+	overflow: hidden;
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -14,6 +15,7 @@
 	.nav {
 		&__link {
 			color: #fff;
+			font-size: 1.25rem;
 			&:hover {
 				color: #fff;
 				text-shadow: 0px 0px 10px #fff;
@@ -22,13 +24,14 @@
 	}
 	.name-logo {
 		color: #fff;
+		font-size: 1.25rem;
 		&:hover {
 			color: #fff;
 			text-shadow: 0px 0px 10px #fff;
 		}
 	}
 	&__bottom {
-		width: 13%;
+		width: 15%;
 		min-height: 90px;
 		display: flex;
 		flex-direction: column;
@@ -48,15 +51,97 @@
 	}
 	&__branch {
 		position: absolute;
+		overflow: hidden;
 		&_left {
 			left: 0;
 			top: 0;
+			height: 100%;
 			transform: scale(1, 1) rotate(-15deg);
 		}
 		&_right {
 			right: 0;
 			top: 0;
+			height: 100%;
 			transform: scale(-1, 1) rotate(-15deg);
 		}
 	}
+}
+
+@media screen and (max-width: $desktop) {
+	.footer {
+		&__bottom {
+			width: 20%;
+		}
+		&__branch {
+			&_left,
+			&_right {
+				height: 90%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $big-tablet) {
+	.footer {
+		&__container {
+			min-height: 230px;
+		}
+		&__bottom {
+			width: 25%;
+		}
+		&__branch {
+			&_left,
+			&_right {
+				height: 80%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.footer {
+		&__container {
+			min-height: 310px;
+			padding: 30px 0;
+		}
+		.nav {
+			width: 50%;
+			&__menu {
+				flex-direction: column;
+				height: 170px;
+			}
+			&__link {
+				&_home {
+					display: block;
+				}
+			}
+		}
+		.name-logo {
+			display: none;
+		}
+		&__bottom {
+			width: 35%;
+			min-height: 20px;
+		}
+		&__branch {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: $big-mobile) {
+	.footer {
+		&__bottom {
+			width: 55%;
+		}
+		&__branch {
+			&_left,
+			&_right {
+				height: 80%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
 }
