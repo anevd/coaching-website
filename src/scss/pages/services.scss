@@ -1,16 +1,16 @@
 @import "../layouts/variables.scss";
 
 // Катя
+
+.services-pricelist {
+	padding: 60px 0 35px 0;
+}
+
 .services-pricelist__container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas:
-		"item1 item2"
-		"item3 item4";
-	gap: 3%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin-top: 3%;
-	margin-bottom: 6%;
 }
 .services-pricelist__item1 {
 	grid-area: item1;
@@ -24,16 +24,13 @@
 .services-pricelist__item4 {
 	grid-area: item4;
 }
-.services-pricelist {
-	padding: 60px 0 74px 0;
-}
 .services-pricelist__item {
-	padding: 5%;
-	width: 100%;
-	height: 800px;
+	padding: 45px 60px;
+	width: 570px;
 	text-align: center;
 	background-color: $color-beige;
 	border-radius: 15px;
+	margin-bottom: 67px;
 }
 
 .services-pricelist__item-text-container {
@@ -91,6 +88,7 @@
 	display: flex;
 	flex-direction: row;
 	margin-top: 5%;
+	text-align: left;
 }
 .services-pricelist__square {
 	height: 10px;
