@@ -26,11 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-<<<<<<< HEAD
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/app.scss */ \"./src/scss/app.scss\");\n\r\n\n\n//# sourceURL=webpack://design/./src/index.js?");
-=======
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/app.scss */ \"./src/scss/app.scss\");\n\n\n//# sourceURL=webpack://design/./src/index.js?");
->>>>>>> f3e757441731426fa9ca49907fabf3f8aa41aba2
 
 /***/ })
 

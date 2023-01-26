@@ -281,7 +281,21 @@
 
 @media screen and (max-width: $desktop) {
     // Диана
-    
+    .home-coach-give {
+        &__subtitle {
+            width: 70%;
+        }
+    }
+
+    .home-work-with {
+        &__subtitle {
+            width: 90%;
+        }
+
+        &__list-catalouge {
+            width: 90%;
+        }
+    }
     // Альбина
     .home-services {
         padding: 60px 0 60px 0;
@@ -311,7 +325,72 @@
 
 @media screen and (max-width: $big-tablet) {
     // Диана
-    
+    .home-main__container-img {
+        right: -2%;
+    }
+
+    .home-main__container-text {
+        width: 80%;
+
+        &-title {
+            font-size: 3.8rem;
+        }
+
+        &-subtitle {
+            font-size: 1.3rem;
+        }
+    }
+
+.home-coach-give {
+    &__container {
+        width: 90%;
+        padding-top: 5%;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__title {
+        padding-left: 10%;
+        font-size: 3.8rem;
+    }
+
+    &__subtitle {
+        width: 100%;
+
+        &-text {
+            padding-left: 11%;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.home-work-with {
+    &__container {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 3.8rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__subtitle {
+        font-size: 1.3rem;
+    }
+
+    &__list {
+        width: 100%;
+    }
+
+    &__list-catalouge {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+}
+
     // Альбина
     .home-testimonials__item {
         width: 85%;
