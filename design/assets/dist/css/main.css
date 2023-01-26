@@ -1370,78 +1370,57 @@ p {
   }
 }
 .services-pricelist {
-  padding: 60px 0 35px 0;
+  padding: 60px 0 102px 0;
 }
-
 .services-pricelist__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 3%;
+  justify-content: center;
+  gap: 60px 5%;
+  margin-top: 48px;
 }
-
 .services-pricelist__item1 {
   grid-area: item1;
 }
-
 .services-pricelist__item2 {
   grid-area: item2;
 }
-
 .services-pricelist__item3 {
   grid-area: item3;
 }
-
 .services-pricelist__item4 {
   grid-area: item4;
 }
-
 .services-pricelist__item {
   padding: 45px 60px;
   width: 570px;
+  min-height: 800px;
   text-align: center;
   background-color: #f6f1eb;
   border-radius: 15px;
-  margin-bottom: 67px;
 }
-
 .services-pricelist__item-text-container {
-  min-height: 198px;
+  min-height: 336px;
 }
-
-.services-pricelist__item-text,
-.services-pricelist__item-time,
-.services-pricelist__item-amount {
+.services-pricelist__item-text, .services-pricelist__item-time, .services-pricelist__item-amount {
   font-size: 24px;
   line-height: 140%;
   letter-spacing: 0.02em;
 }
-
 .services-pricelist__item-title {
   margin-bottom: 6%;
 }
-
 .services-pricelist__item-time-content {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-top: 42px;
+  margin-bottom: 42px;
 }
-
-.services-pricelist__item-time-content1 {
-  margin-top: 21%;
-  margin-bottom: 12%;
-}
-
-.services-pricelist__item-time-content2 {
-  margin-top: 11%;
-  margin-bottom: 12%;
-}
-
 .services-pricelist__item-amount {
-  margin-top: 20%;
+  margin-top: 35px;
 }
-
 .services-pricelist__item-price {
   margin-bottom: 32px;
   font-weight: 600;
@@ -1450,25 +1429,23 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
 }
-
-.button_services-pricelist-btn_center {
-  margin: 0 auto;
-  display: block;
-}
-
 .services-pricelist__info-block {
   display: flex;
   flex-direction: row;
   margin-top: 5%;
   text-align: left;
 }
-
 .services-pricelist__square {
-  height: 10px;
+  height: 10.35px;
   background-color: #3f3c20;
   margin-right: 5%;
   padding-right: 2.3%;
   margin-top: 2.9%;
+}
+
+.button_services-pricelist-btn_center {
+  margin: 0 auto;
+  display: block;
 }
 
 .services-howwork {
@@ -1579,6 +1556,11 @@ p {
   margin-bottom: 13%;
 }
 
+@media screen and (max-width: 1280px) {
+  .services-pricelist {
+    padding: 60px 0 60px 0;
+  }
+}
 @media screen and (max-width: 1025px) {
   .services-howwork-container {
     flex-wrap: wrap;
@@ -1589,6 +1571,29 @@ p {
   }
 }
 @media screen and (max-width: 768px) {
+  .services-pricelist__item {
+    padding: 40px 30px;
+    width: 450px;
+  }
+  .services-pricelist__item-title {
+    font-size: 58px;
+  }
+  .services-pricelist__item-text, .services-pricelist__item-time, .services-pricelist__item-amount {
+    font-size: 22px;
+  }
+  .services-pricelist__item-time-content {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .services-pricelist__item-price {
+    font-size: 44px;
+  }
+  .services-pricelist__square {
+    height: 8.96px;
+  }
+  .button_services-pricelist-btn_center {
+    width: 400px;
+  }
   .services-howwork-section__title {
     font-size: 20px;
   }
@@ -1606,6 +1611,34 @@ p {
   }
 }
 @media screen and (max-width: 480px) {
+  .services-pricelist__item {
+    padding: 40px 30px;
+    width: 370px;
+    min-height: 720px;
+  }
+  .services-pricelist__item-title {
+    font-size: 40px;
+  }
+  .services-pricelist__item-text-container {
+    min-height: 315px;
+  }
+  .services-pricelist__item-text, .services-pricelist__item-time, .services-pricelist__item-amount {
+    font-size: 20px;
+  }
+  .services-pricelist__item-time-content {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .services-pricelist__item-price {
+    font-size: 30px;
+  }
+  .services-pricelist__square {
+    height: 6.4px;
+  }
+  .button_services-pricelist-btn_center {
+    width: 270px;
+    font-size: 22px;
+  }
   .services-howwork-section {
     max-width: 100%;
     padding: 2% 7% 2% 7%;
@@ -1630,6 +1663,34 @@ p {
   }
 }
 @media screen and (max-width: 375px) {
+  .services-pricelist__item {
+    padding: 30px 20px;
+    width: 300px;
+    min-height: 670px;
+  }
+  .services-pricelist__item-title {
+    font-size: 40px;
+  }
+  .services-pricelist__item-text-container {
+    min-height: 275px;
+  }
+  .services-pricelist__item-text, .services-pricelist__item-time, .services-pricelist__item-amount {
+    font-size: 18px;
+  }
+  .services-pricelist__item-time-content {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .services-pricelist__item-price {
+    font-size: 30px;
+  }
+  .services-pricelist__square {
+    height: 5.75px;
+  }
+  .button_services-pricelist-btn_center {
+    width: 250px;
+    font-size: 20px;
+  }
   .services-howwork-section__title {
     font-size: 18px;
   }
