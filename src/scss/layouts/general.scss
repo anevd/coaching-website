@@ -7,6 +7,7 @@
 	border: none;
 	font-family: $default-font;
 	font-weight: 400;
+	color: $color-text;
 }
 
 h1,
@@ -57,4 +58,19 @@ p {
 	letter-spacing: 0.02em;
 	color: $color-text;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: $desktop) {
+	.wrapper {
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width: $big-mobile) {
+	.title {
+		font-size: 45px;
+	}
+	.button {
+		width: 300px;
+	}
 }

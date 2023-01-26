@@ -101,3 +101,249 @@
     margin-top: 2.9%; 
 }
 // Женя
+.services-howwork {
+    background-color: $color-beige;    
+}
+
+.services-howwork-title {
+    padding: 5% 0 8% 0;
+}
+
+.services-howwork-container {
+    padding: 0 0 15% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-howwork-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2% 0 2%;
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85px;
+        height: 85px;
+        background-color: $color-beige-dark;
+        border-radius: 50%;
+        font-family: $title-font;
+        font-size: 64px;
+    }
+
+    &__title {
+        padding: 5% 0 7% 0;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+}
+.services-faq {
+    background-color: white;
+}
+
+.services-faq-title {
+    padding: 5% 0 3% 0;
+}
+
+.services-faq-section {
+    margin: 2% 12% 2% 12%;
+    padding: 20px 30px 10px 30px;
+    display: flex;
+    background-color: $color-beige;
+    border-radius: 15px;
+
+    &__question {
+        padding: 0 10px 10px 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+    }
+
+    &__answer {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        height: 0;        
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+
+        &_visible {
+            padding: 0 12% 10px 0;
+            opacity: 1;
+            visibility: visible;
+            height: 100%;
+            transition: opacity 0.5s ease-in;
+        }
+    }
+    
+    &__plus {
+        cursor: pointer;
+        width:32px;
+        height:32px;
+        background:
+            linear-gradient(#3F3C20,#3F3C20),
+            linear-gradient(#3F3C20,#3F3C20);
+        background-position:center;
+        background-size: 100% 4px,4px 100%;
+        background-repeat:no-repeat;
+    }
+
+    &__cross {
+        display: none;
+        cursor: pointer;
+        width:32px;
+        height:32px;
+        background:
+            linear-gradient(#3F3C20,#3F3C20),
+            linear-gradient(#3F3C20,#3F3C20);
+        background-position:center;
+        background-size: 100% 4px,4px 100%;
+        background-repeat:no-repeat;
+        transform: rotate(45deg);
+    }
+}
+
+.services-faq-section:nth-child(6) {
+    margin-bottom: 13%;
+}
+
+// ----------------- media queries
+
+@media screen and (max-width: $large-desktop) {
+
+// Катя
+
+// Женя
+
+}
+
+@media screen and (max-width: $desktop) {
+
+    // Катя
+    
+    // Женя
+    
+}
+
+@media screen and (max-width: $big-tablet) {
+
+    // Катя
+    
+    // Женя
+    .services-howwork-container {
+        flex-wrap: wrap;
+    }
+    .services-howwork-section {
+        max-width: 50%;
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+
+    // Катя
+    
+    // Женя
+    
+    .services-howwork-section {
+        
+        &__title {
+            font-size: 20px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    .services-faq-section {
+        padding: 20px 4% 10px 4%;
+
+        &__question {
+            font-size: 20px;
+        }
+
+        &__answer {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: $big-mobile) {
+
+    // Катя
+    
+    // Женя
+    .services-howwork-section {
+        max-width: 100%;
+        padding: 2% 7% 2% 7%;
+    }
+    
+    .services-faq-section {
+        margin: 5% 7% 5% 7%;
+        padding: 12px 5% 6px 5%;
+
+        &__question {
+            padding: 0 10px 6px 0;
+        }
+        
+        &__answer {
+
+            &_visible {
+                padding: 0 12% 6px 0;
+            }
+        }
+
+        &__plus {
+            width:26px;
+            height:26px;
+        }
+    
+        &__cross {
+            width:26px;
+            height:26px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+
+    // Катя
+    
+    // Женя
+    
+    .services-howwork-section {
+        
+        &__title {
+            font-size: 18px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+    .services-faq-section {
+        &__question {
+            font-size: 18px;
+        }
+
+        &__answer {
+            font-size: 18px;
+        }
+
+    }
+}
