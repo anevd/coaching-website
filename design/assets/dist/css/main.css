@@ -1219,7 +1219,6 @@ p {
 }
 .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
   padding-bottom: 30px;
-  width: 75vw;
 }
 .about-path__paragraph1 {
   padding-top: 20px;
@@ -1264,10 +1263,18 @@ p {
 .about-card__description {
   font-weight: bold;
   font-size: 24px;
-  width: 20vw;
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .about-ages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
+  }
+}
 .services-pricelist {
   padding: 60px 0 35px 0;
 }

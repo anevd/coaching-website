@@ -343,7 +343,6 @@
 
 
         padding-bottom: 30px;
-        width: 75vw;
     }
 
     &__paragraph1 {
@@ -393,7 +392,16 @@
 
         font-weight: bold;
         font-size: 24px;
-        width: 20vw;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .about-ages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4%;
     }
 }
