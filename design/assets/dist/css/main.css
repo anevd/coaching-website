@@ -953,13 +953,13 @@ p {
 }
 .about-quote {
   width: 100%;
-  min-height: 360px;
+  min-height: 342px;
   background-color: #F6F1EB;
 }
 .about-quote__wrapper {
   display: flex;
   width: 53vw;
-  padding: 7vh 0 0 0;
+  padding: 25px 0 0 0;
 }
 .about-quote_left {
   font-family: "Oranienbaum", serif;
@@ -967,14 +967,14 @@ p {
   color: #97A179;
 }
 .about-quote__text {
-  margin: 10vh 0 0 1vw;
+  margin: 35px 0 0 1vw;
   font-family: "Oranienbaum", serif;
   font-size: 3vw;
   line-height: 140%;
   color: #3F3C20;
 }
 .about-quote_right {
-  margin: 25vh 0 0 0;
+  margin: 80px 0 0 0;
   font-family: "Oranienbaum", serif;
   font-size: 8vw;
   color: #97A179;
@@ -982,6 +982,7 @@ p {
 }
 .about-quote__author {
   width: 53vw;
+  margin-top: 40px;
   font-size: 1.5vw;
   color: #3F3C20;
   text-align: right;
@@ -1044,7 +1045,118 @@ p {
     display: none;
   }
 }
+@media screen and (max-width: 480px) {
+  .about-quote {
+    width: 100%;
+    min-height: 110px;
+    background-color: #F6F1EB;
+  }
+  .about-quote__wrapper {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+  .about-quote_left {
+    font-family: "Oranienbaum", serif;
+    font-size: 54px;
+    color: #97A179;
+  }
+  .about-quote__text {
+    margin: 15px 0 0 10px;
+    font-family: "Oranienbaum", serif;
+    font-size: 20px;
+    line-height: 140%;
+    color: #3F3C20;
+  }
+  .about-quote_right {
+    margin: 35px 0 0 0;
+    font-family: "Oranienbaum", serif;
+    font-size: 54px;
+    color: #97A179;
+    line-height: 0.5;
+  }
+  .about-quote__author {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 10px;
+    color: #3F3C20;
+    text-align: right;
+  }
+  .about-Elena {
+    min-height: 350px;
+  }
+  .about-Elena__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .about-Elena__photo {
+    width: 85%;
+  }
+  .about-Elena__text {
+    margin-left: 0;
+    width: 80%;
+  }
+  .about-Elena__text_title {
+    margin: 10px 0 0 0;
+    font-family: "Oranienbaum", serif;
+    font-size: 28px;
+    color: #3F3C20;
+  }
+  .about-Elena__text_first {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 140%;
+    color: #3F3C20;
+  }
+  .about-Elena__text_second {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 140%;
+    color: #3F3C20;
+  }
+  .about-Elena__background {
+    display: none;
+  }
+}
 @media screen and (max-width: 375px) {
+  .about-quote {
+    width: 100%;
+    min-height: 80px;
+    background-color: #F6F1EB;
+  }
+  .about-quote__wrapper {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+  .about-quote_left {
+    font-family: "Oranienbaum", serif;
+    font-size: 48px;
+    color: #97A179;
+  }
+  .about-quote__text {
+    margin: 15px 0 0 10px;
+    font-family: "Oranienbaum", serif;
+    font-size: 14px;
+    line-height: 140%;
+    color: #3F3C20;
+  }
+  .about-quote_right {
+    margin: 25px 0 0 0;
+    font-family: "Oranienbaum", serif;
+    font-size: 48px;
+    color: #97A179;
+    line-height: 0.5;
+  }
+  .about-quote__author {
+    width: 100%;
+    margin-top: 7px;
+    font-size: 8px;
+    color: #3F3C20;
+    text-align: right;
+  }
   .about-Elena {
     min-height: 350px;
   }
