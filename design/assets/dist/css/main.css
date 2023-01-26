@@ -952,51 +952,50 @@ p {
   }
 }
 .about-quote {
-  width: 100%;
   min-height: 342px;
-  background-color: #F6F1EB;
+  background-color: #f6f1eb;
+  padding: 92px 0 59px 0;
 }
 .about-quote__wrapper {
   display: flex;
-  width: 53vw;
-  padding: 25px 0 0 0;
+  width: 70%;
 }
 .about-quote_left {
   font-family: "Oranienbaum", serif;
   font-size: 8vw;
-  color: #97A179;
+  color: #97a179;
 }
 .about-quote__text {
   margin: 35px 0 0 1vw;
   font-family: "Oranienbaum", serif;
-  font-size: 3vw;
+  font-size: 48px;
   line-height: 140%;
-  color: #3F3C20;
+  color: #3f3c20;
 }
 .about-quote_right {
   margin: 80px 0 0 0;
   font-family: "Oranienbaum", serif;
   font-size: 8vw;
-  color: #97A179;
+  color: #97a179;
   line-height: 0.5;
 }
 .about-quote__author {
-  width: 53vw;
+  width: 70%;
   margin-top: 40px;
-  font-size: 1.5vw;
-  color: #3F3C20;
+  font-size: 24px;
+  color: #3f3c20;
   text-align: right;
 }
 
 .about-Elena {
   position: relative;
-  width: 100%;
+  padding: 101px 0 169px 0;
   min-height: 650px;
+  overflow: hidden;
 }
 .about-Elena__wrapper {
   display: flex;
   flex-direction: row;
-  margin-top: 15vh;
 }
 .about-Elena__photo {
   margin-top: 1%;
@@ -1007,34 +1006,60 @@ p {
 }
 .about-Elena__text {
   margin-left: 4vw;
-  width: 44%;
+  width: 45%;
 }
-.about-Elena__text__text_title {
+.about-Elena__text_title {
   margin-bottom: 0;
   font-family: "Oranienbaum", serif;
-  font-size: 4vw;
-  color: #3F3C20;
+  font-size: 64px;
+  color: #3f3c20;
 }
-.about-Elena__text__text_first {
-  margin-top: 7vh;
-  font-size: 1.5vw;
+.about-Elena__text_first {
+  margin-top: 43px;
+  font-size: 24px;
   line-height: 140%;
-  color: #3F3C20;
+  color: #3f3c20;
 }
-.about-Elena__text__text_second {
-  margin-top: 7vh;
-  font-size: 1.5vw;
+.about-Elena__text_second {
+  margin-top: 43px;
+  font-size: 24px;
   line-height: 140%;
-  color: #3F3C20;
+  color: #3f3c20;
+  width: 80%;
 }
-.about-Elena__text__background {
+.about-Elena__background {
   position: absolute;
-  top: -30px;
+  top: 59px;
   right: 0;
-  width: 26.75vw;
 }
 
 /* ------------------------ Media queries ------------------------ */
+@media screen and (max-width: 1370px) {
+  .about-Elena__background {
+    top: 138px;
+    width: 370px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .about-quote {
+    padding: 4% 0 4% 0;
+  }
+  .about-quote__text {
+    font-size: 40px;
+  }
+  .about-Elena {
+    padding: 4% 0 6% 0;
+  }
+  .about-Elena__background {
+    display: none;
+  }
+  .about-Elena__text {
+    width: 50%;
+  }
+  .about-Elena__text_second {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1025px) {
   .about-quote {
     min-height: 230px;
@@ -1069,6 +1094,16 @@ p {
   }
   .about-quote__wrapper {
     padding: 15px 0 0 0;
+    width: 100%;
+  }
+  .about-quote_left {
+    font-size: 60px;
+  }
+  .about-quote_right {
+    font-size: 60px;
+  }
+  .about-quote__author {
+    width: 100%;
   }
   .about-Elena {
     min-height: 370px;
@@ -1087,9 +1122,6 @@ p {
     margin-top: 20px;
     font-size: 14px;
   }
-  .about-Elena__background {
-    top: 10px;
-  }
 }
 @media screen and (max-width: 480px) {
   .about-quote {
@@ -1098,7 +1130,6 @@ p {
   }
   .about-quote__wrapper {
     display: flex;
-    width: 100%;
     padding: 0;
   }
   .about-quote_left {
@@ -1114,7 +1145,6 @@ p {
     line-height: 0.5;
   }
   .about-quote__author {
-    width: 100%;
     margin-top: 15px;
     font-size: 10px;
   }
@@ -1174,7 +1204,7 @@ p {
   }
   .about-quote__author {
     width: 100%;
-    margin-top: 7px;
+    margin-top: 17px;
     font-size: 8px;
   }
   .about-Elena {
@@ -1204,9 +1234,6 @@ p {
   .about-Elena__text_second {
     margin: 20px 0;
     font-size: 12px;
-  }
-  .about-Elena__background {
-    display: none;
   }
 }
 .about-path {
