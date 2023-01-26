@@ -953,7 +953,7 @@ p {
 }
 .about-quote {
   width: 100%;
-  height: 50vh;
+  min-height: 360px;
   background-color: #F6F1EB;
 }
 .about-quote__wrapper {
@@ -970,10 +970,11 @@ p {
   margin: 10vh 0 0 1vw;
   font-family: "Oranienbaum", serif;
   font-size: 3vw;
+  line-height: 140%;
   color: #3F3C20;
 }
 .about-quote_right {
-  margin: 23vh 0 0 0;
+  margin: 25vh 0 0 0;
   font-family: "Oranienbaum", serif;
   font-size: 8vw;
   color: #97A179;
@@ -981,15 +982,15 @@ p {
 }
 .about-quote__author {
   width: 53vw;
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5vw;
   color: #3F3C20;
   text-align: right;
 }
 
 .about-Elena {
+  position: relative;
   width: 100%;
-  height: 92vh;
+  min-height: 680px;
 }
 .about-Elena__wrapper {
   display: flex;
@@ -997,7 +998,8 @@ p {
   margin-top: 15vh;
 }
 .about-Elena__photo {
-  width: 40%;
+  margin-top: 1%;
+  width: 39%;
 }
 .about-Elena__photo img {
   width: 100%;
@@ -1014,23 +1016,73 @@ p {
 }
 .about-Elena__text_first {
   margin-top: 7vh;
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5vw;
+  line-height: 140%;
   color: #3F3C20;
 }
 .about-Elena__text_second {
   margin-top: 7vh;
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5vw;
+  line-height: 140%;
   color: #3F3C20;
 }
 .about-Elena__background {
   position: absolute;
-  top: 60vh;
+  top: -30px;
   right: 0;
   width: 26.75vw;
 }
 
+/* ------------------------ Media queries ------------------------ */
+@media screen and (max-width: 768px) {
+  .about-Elena__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-Elena__background {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-Elena {
+    min-height: 350px;
+  }
+  .about-Elena__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .about-Elena__photo {
+    width: 85%;
+  }
+  .about-Elena__text {
+    margin-left: 0;
+    width: 80%;
+  }
+  .about-Elena__text_title {
+    margin: 10px 0 0 0;
+    font-family: "Oranienbaum", serif;
+    font-size: 24px;
+    color: #3F3C20;
+  }
+  .about-Elena__text_first {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 140%;
+    color: #3F3C20;
+  }
+  .about-Elena__text_second {
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 140%;
+    color: #3F3C20;
+  }
+  .about-Elena__background {
+    display: none;
+  }
+}
 .about-path {
   background-color: #f6f1eb;
   display: flex;
