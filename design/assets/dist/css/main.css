@@ -1108,6 +1108,9 @@ p {
   .about-quote__wrapper {
     padding: 15px 0 0 0;
   }
+  .about-quote_right {
+    margin-top: 130px;
+  }
   .about-Elena {
     min-height: 400px;
   }
