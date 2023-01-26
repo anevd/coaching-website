@@ -1724,7 +1724,8 @@ p {
 }
 .contact {
   background-color: #fff;
-  padding: 5% 5% 10% 5%;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 .contact__container {
   margin-top: 10%;
