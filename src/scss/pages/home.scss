@@ -1,75 +1,79 @@
 @import "../layouts/variables.scss";
 
 // Диана
-.main {
+
+.home-main {
     background-color: $color-beige;
     height: 622px;
 }
 
-.main-container {
+.home-main-container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
-.main__container-text {
+.home-main__container-text {
     display: flex;
     flex-direction: column;
 
         &-title {
             font-family:$title-font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 64px;
+            font-size: 4rem;
             line-height: 130%;
             letter-spacing: 0.02em;
             text-transform: uppercase;
-            color: $color-text;
-            padding-top: 114px;
+            padding-top: 7.12rem;
         }
 
         &-subtitle {
             font-family: $default-font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
+            font-size: 1.5rem;
             line-height: 140%;
             letter-spacing: 0.02em;
-            color: $color-text;
-            padding-top: 7px;
-            padding-bottom: 97px;
+            padding-top: 0.44rem;
+            padding-bottom: 6rem;
         }
 }
 
-.main__container-img {
+.home-main__container-img {
     position: absolute;
     width: 506px;
     height: 593px;
-    left: 991px;
-    top: 127px;
+    right: 3.91%;
+    top: 6.7%;
 }
 
-.coach-give__container {
-    width: 100%;
+.wrapper {
+    position: relative;
 }
 
-.coach-give {
+.home-coach-give {
     height: 792px;
     width: 100%;
     position: relative;
+
+    &__container {
+        width: 100%;
+    }
+
+    &__img {
+        position: absolute;
+        right: 0%;
+        top: 4.42%;
+    }
 
     &__title {
         font-family: $title-font;
         font-style: normal;
         font-weight: 400;
-        font-size: 64px;
+        font-size: 4rem;
         line-height: 130%;
         text-align: center;
         letter-spacing: 0.02em;
-        color: $color-text;
-        padding-top: 60px;
-        padding-bottom: 55px;
+        padding-top: 3.75rem;
+        padding-bottom: 3.3rem;
     }
 
     &__subtitle {
@@ -78,23 +82,15 @@
         flex-direction: column;
 
         &-text {
-            margin-bottom: 30px;
-
-            font-size: 24px;
+            margin-bottom: 1.9rem;
+            font-size: 1.5rem;
             line-height: 140%;
             letter-spacing: 0.02em;
-            color: $color-text;
         }
     }
 }
 
-.coach-give__img {
-    position: absolute;
-    left: 1374px;
-    top: 755px;
-}
-
-.work-with {
+.home-work-with {
     background-color: $color-beige;
     height: 708px;
 
@@ -106,39 +102,30 @@
         font-family: $title-font;
         font-style: normal;
         font-weight: 400;
-        font-size: 64px;
+        font-size: 4rem;
         line-height: 130%;
+        text-align: center;
         letter-spacing: 0.02em;
-        color: $color-text;
-        padding-top: 60px;
-        padding-left: 230px;
+        padding-top: 3.75rem;
+        padding-bottom: 3.3rem;
     }
 
     &__subtitle {
-        font-family: $default-font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 140%;
         letter-spacing: 0.02em;
-        color: $color-text;
-        padding-top: 54px;
-        padding-bottom: 20px;
+        padding-bottom: 1.3rem;
     }
 
     &__list-catalouge {
-        font-family: $default-font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 140%;
         letter-spacing: 0.02em;
-        color: $color-text;
         display: flex;
 
         &-text {
-            padding-left: 53px;
-            padding-top: 23px;
+            padding-left: 3.3rem;
+            padding-top: 1.43rem;
         }
     }
 }
@@ -294,7 +281,21 @@
 
 @media screen and (max-width: $desktop) {
     // Диана
-    
+    .home-coach-give {
+        &__subtitle {
+            width: 70%;
+        }
+    }
+
+    .home-work-with {
+        &__subtitle {
+            width: 90%;
+        }
+
+        &__list-catalouge {
+            width: 90%;
+        }
+    }
     // Альбина
     .home-services {
         padding: 60px 0 60px 0;
@@ -324,7 +325,72 @@
 
 @media screen and (max-width: $big-tablet) {
     // Диана
-    
+    .home-main__container-img {
+        right: -2%;
+    }
+
+    .home-main__container-text {
+        width: 80%;
+
+        &-title {
+            font-size: 3.8rem;
+        }
+
+        &-subtitle {
+            font-size: 1.3rem;
+        }
+    }
+
+.home-coach-give {
+    &__container {
+        width: 90%;
+        padding-top: 5%;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__title {
+        padding-left: 10%;
+        font-size: 3.8rem;
+    }
+
+    &__subtitle {
+        width: 100%;
+
+        &-text {
+            padding-left: 11%;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.home-work-with {
+    &__container {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 3.8rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__subtitle {
+        font-size: 1.3rem;
+    }
+
+    &__list {
+        width: 100%;
+    }
+
+    &__list-catalouge {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+}
+
     // Альбина
     .home-testimonials__item {
         width: 85%;
