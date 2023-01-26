@@ -1009,25 +1009,25 @@ p {
   margin-left: 4vw;
   width: 44%;
 }
-.about-Elena__text_title {
+.about-Elena__text__text_title {
   margin-bottom: 0;
   font-family: "Oranienbaum", serif;
   font-size: 4vw;
   color: #3F3C20;
 }
-.about-Elena__text_first {
+.about-Elena__text__text_first {
   margin-top: 7vh;
   font-size: 1.5vw;
   line-height: 140%;
   color: #3F3C20;
 }
-.about-Elena__text_second {
+.about-Elena__text__text_second {
   margin-top: 7vh;
   font-size: 1.5vw;
   line-height: 140%;
   color: #3F3C20;
 }
-.about-Elena__background {
+.about-Elena__text__background {
   position: absolute;
   top: -30px;
   right: 0;
@@ -1215,6 +1215,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 35px;
 }
 .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
   padding-bottom: 30px;
@@ -1227,6 +1228,7 @@ p {
 .about-education {
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 .about-education .title_education {
   margin-top: 5%;
@@ -1234,7 +1236,6 @@ p {
 
 .about-ages {
   display: flex;
-  height: 19vw;
   justify-content: space-between;
   margin-top: 4%;
 }

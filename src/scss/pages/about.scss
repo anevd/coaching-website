@@ -6,42 +6,42 @@
     min-height: 342px;
     background-color: #F6F1EB;
 
-&__wrapper {
-    display: flex;
-    width: 53vw;
-    padding: 25px 0 0 0;
-}
+    &__wrapper {
+        display: flex;
+        width: 53vw;
+        padding: 25px 0 0 0;
+    }
 
-&_left {
-    font-family: $title-font;
-    font-size: 8vw;
-    color: #97A179;
-}
+    &_left {
+        font-family: $title-font;
+        font-size: 8vw;
+        color: #97A179;
+    }
 
-&__text {
-    margin: 35px 0 0 1vw;
-    font-family: $title-font;
-    font-size: 3vw;
-    line-height: 140%;
-    color: #3F3C20;
-}
+    &__text {
+        margin: 35px 0 0 1vw;
+        font-family: $title-font;
+        font-size: 3vw;
+        line-height: 140%;
+        color: #3F3C20;
+    }
 
-&_right {
-    margin: 80px 0 0 0;
-    font-family: $title-font;
-    font-size: 8vw;
-    color: #97A179;
-    line-height: 0.5;
-}
+    &_right {
+        margin: 80px 0 0 0;
+        font-family: $title-font;
+        font-size: 8vw;
+        color: #97A179;
+        line-height: 0.5;
+    }
 
-&__author {
-    width: 53vw;
-    margin-top: 40px;
-    font-size: 1.5vw;
-    color: #3F3C20;
-    text-align: right;
-    
-}
+    &__author {
+        width: 53vw;
+        margin-top: 40px;
+        font-size: 1.5vw;
+        color: #3F3C20;
+        text-align: right;
+
+    }
 }
 
 .about-Elena {
@@ -49,172 +49,167 @@
     width: 100%;
     min-height: 650px;
 
-&__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-top: 15vh;
-}
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15vh;
+    }
 
-&__photo {
-    margin-top: 1%;
-    width: 39%;
-}
+    &__photo {
+        margin-top: 1%;
+        width: 39%;
+    }
 
-&__photo img {
-    width: 100%;
-}
+    &__photo img {
+        width: 100%;
+    }
 
-&__text {
-    margin-left: 4vw;
-    width: 44%;
-    
-}
+    &__text {
+        margin-left: 4vw;
+        width: 44%;
 
-&__text_title {
-    margin-bottom: 0;
-    font-family: $title-font;
-    font-size: 4vw;
-    color: #3F3C20;
-}
+        &__text_title {
+            margin-bottom: 0;
+            font-family: $title-font;
+            font-size: 4vw;
+            color: #3F3C20;
+        }
 
-&__text_first {
-    margin-top: 7vh;
-    font-size: 1.5vw;
-    line-height: 140%;
-    color: #3F3C20;
-}
+        &__text_first {
+            margin-top: 7vh;
+            font-size: 1.5vw;
+            line-height: 140%;
+            color: #3F3C20;
+        }
 
-&__text_second {
-    margin-top: 7vh;
-    font-size: 1.5vw;
-    line-height: 140%;
-    color: #3F3C20;
-}
+        &__text_second {
+            margin-top: 7vh;
+            font-size: 1.5vw;
+            line-height: 140%;
+            color: #3F3C20;
+        }
 
-&__background {
-    position: absolute;
-    top: -30px;
-    right: 0;
-    width: 26.75vw;
-}
+        &__background {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            width: 26.75vw;
+        }
 
+    }
 }
 
 /* ------------------------ Media queries ------------------------ */
-@media screen and (max-width: $large-desktop) {
-   
-}
+@media screen and (max-width: $large-desktop) {}
 
-@media screen and (max-width: $desktop) {
-
-}
+@media screen and (max-width: $desktop) {}
 
 
 @media screen and (max-width: $big-tablet) {
     .about-quote {
         min-height: 230px;
-    
-    &__wrapper {
-        padding: 15px 0 0 0;
-    }
-    }
-    
-    .about-Elena {
-        min-height: 400px;
-    
-    &__wrapper {
-        margin-top: 30px;
+
+        &__wrapper {
+            padding: 15px 0 0 0;
+        }
     }
 
-    &__text_title {
-        font-size: 34px;
+    .about-Elena {
+        min-height: 400px;
+
+        &__wrapper {
+            margin-top: 30px;
+        }
+
+        &__text_title {
+            font-size: 34px;
+        }
+
+        &__text_first {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        &__text_second {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        &__background {
+            top: 10px;
+        }
+
     }
-    
-    &__text_first {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-    
-    &__text_second {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-    
-    &__background {
-        top: 10px;
-    }
-    
-    } 
 }
 
 @media screen and (max-width: $tablet) {
     .about-quote {
         min-height: 230px;
-    
-    &__wrapper {
-        padding: 15px 0 0 0;
-    }
-    }
-    
-    .about-Elena {
-        min-height: 370px;
-    
-    &__wrapper {
-        margin-top: 30px;
+
+        &__wrapper {
+            padding: 15px 0 0 0;
+        }
     }
 
-    &__text_title {
-        font-size: 34px;
+    .about-Elena {
+        min-height: 370px;
+
+        &__wrapper {
+            margin-top: 30px;
+        }
+
+        &__text_title {
+            font-size: 34px;
+        }
+
+        &__text_first {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        &__text_second {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        &__background {
+            top: 10px;
+        }
+
     }
-    
-    &__text_first {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-    
-    &__text_second {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-    
-    &__background {
-        top: 10px;
-    }
-    
-    } 
 }
 
 @media screen and (max-width: $big-mobile) {
     .about-quote {
         width: 100%;
         min-height: 110px;
-    
-    &__wrapper {
-        display: flex;
-        width: 100%;
-        padding: 0;
-    }
-    
-    &_left {
-        font-size: 54px;
-    }
-    
-    &__text {
-        margin: 15px 0 0 10px;
-        font-size: 20px;
-    }
-    
-    &_right {
-        margin: 35px 0 0 0;
-        font-size: 54px;
-        line-height: 0.5;
-    }
-    
-    &__author {
-        width: 100%;
-        margin-top: 15px;
-        font-size: 10px;        
-    }
+
+        &__wrapper {
+            display: flex;
+            width: 100%;
+            padding: 0;
+        }
+
+        &_left {
+            font-size: 54px;
+        }
+
+        &__text {
+            margin: 15px 0 0 10px;
+            font-size: 20px;
+        }
+
+        &_right {
+            margin: 35px 0 0 0;
+            font-size: 54px;
+            line-height: 0.5;
+        }
+
+        &__author {
+            width: 100%;
+            margin-top: 15px;
+            font-size: 10px;
+        }
     }
 
     .about-Elena {
@@ -226,26 +221,26 @@
             align-items: center;
             margin-top: 20px;
         }
-        
+
         &__photo {
             width: 85%;
         }
-        
+
         &__text {
             margin-left: 0;
             width: 80%;
         }
-        
+
         &__text_title {
             margin: 10px 0 0 0;
             font-size: 28px;
         }
-        
+
         &__text_first {
             margin-top: 20px;
             font-size: 14px;
         }
-        
+
         &__text_second {
             margin: 20px 0;
             font-size: 14px;
@@ -262,33 +257,33 @@
     .about-quote {
         width: 100%;
         min-height: 80px;
-    
-    &__wrapper {
-        display: flex;
-        width: 100%;
-        padding: 0;
-    }
-    
-    &_left {
-        font-size: 48px;
-    }
-    
-    &__text {
-        margin: 15px 0 0 10px;
-        font-size: 14px;
-    }
-    
-    &_right {
-        margin: 25px 0 0 0;
-        font-size: 48px;
-        line-height: 0.5;
-    }
-    
-    &__author {
-        width: 100%;
-        margin-top: 7px;
-        font-size: 8px;
-    }
+
+        &__wrapper {
+            display: flex;
+            width: 100%;
+            padding: 0;
+        }
+
+        &_left {
+            font-size: 48px;
+        }
+
+        &__text {
+            margin: 15px 0 0 10px;
+            font-size: 14px;
+        }
+
+        &_right {
+            margin: 25px 0 0 0;
+            font-size: 48px;
+            line-height: 0.5;
+        }
+
+        &__author {
+            width: 100%;
+            margin-top: 7px;
+            font-size: 8px;
+        }
     }
 
     .about-Elena {
@@ -300,26 +295,26 @@
             align-items: center;
             margin-top: 20px;
         }
-        
+
         &__photo {
             width: 85%;
         }
-        
+
         &__text {
             margin-left: 0;
             width: 80%;
         }
-        
+
         &__text_title {
             margin: 10px 0 0 0;
             font-size: 24px;
         }
-        
+
         &__text_first {
             margin-top: 20px;
             font-size: 12px;
         }
-        
+
         &__text_second {
             margin: 20px 0;
             font-size: 12px;
@@ -329,7 +324,7 @@
             display: none;
         }
     }
-    
+
 }
 
 
@@ -340,6 +335,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 35px;
 
     &__paragraph1,
     &__paragraph2,
@@ -358,6 +354,7 @@
 .about-education {
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 
     .title_education {
         margin-top: 5%;
@@ -366,11 +363,8 @@
 
 .about-ages {
     display: flex;
-    height: 19vw;
     justify-content: space-between;
     margin-top: 4%;
-
-
 }
 
 .about-card {
