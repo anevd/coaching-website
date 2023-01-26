@@ -416,42 +416,6 @@ p {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-.services-pricelist__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "item1 item2" "item3 item4";
-  gap: 3%;
-  margin-top: 3%;
-  margin-bottom: 6%;
-}
-
-.services-pricelist__item1 {
-  grid-area: item1;
-}
-
-.services-pricelist__item2 {
-  grid-area: item2;
-}
-
-.services-pricelist__item3 {
-  grid-area: item3;
-}
-
-.services-pricelist__item4 {
-  grid-area: item4;
-}
-
-.services-pricelist {
-  padding: 60px 0 74px 0;
-}
-
-.services-pricelist__item {
-  padding: 5%;
-  width: 100%;
-  height: 800px;
-=======
 @media screen and (max-width: 1280px) {
   .wrapper {
     max-width: 90%;
@@ -840,53 +804,10 @@ p {
   padding: 34px 30px;
   width: 360px;
   min-height: 485px;
->>>>>>> f3e757441731426fa9ca49907fabf3f8aa41aba2
   text-align: center;
   background-color: #f6f1eb;
   border-radius: 15px;
 }
-<<<<<<< HEAD
-
-.services-pricelist__item-text-container {
-  min-height: 198px;
-}
-
-.services-pricelist__item-text, .services-pricelist__item-time, .services-pricelist__item-amount {
-  font-size: 24px;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-}
-
-.services-pricelist__item-title {
-  margin-bottom: 6%;
-}
-
-.services-pricelist__item-time-content {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.services-pricelist__item-time-content1 {
-  margin-top: 21%;
-  margin-bottom: 12%;
-}
-
-.services-pricelist__item-time-content2 {
-  margin-top: 11%;
-  margin-bottom: 12%;
-}
-
-.services-pricelist__item-amount {
-  margin-top: 20%;
-}
-
-.services-pricelist__item-price {
-  margin-bottom: 32px;
-  font-weight: 600;
-  font-size: 48px;
-=======
 .home-services__item-title {
   font-size: 36px;
   margin-bottom: 32px;
@@ -913,15 +834,10 @@ p {
   margin-bottom: 32px;
   font-weight: 600;
   font-size: 32px;
->>>>>>> f3e757441731426fa9ca49907fabf3f8aa41aba2
   line-height: 140%;
   text-align: center;
   letter-spacing: 0.02em;
 }
-<<<<<<< HEAD
-
-.button_services-pricelist-btn_center {
-=======
 .home-services__buttons-container {
   display: flex;
   justify-content: space-between;
@@ -933,25 +849,10 @@ p {
 }
 
 .button_home-services-btn_center {
->>>>>>> f3e757441731426fa9ca49907fabf3f8aa41aba2
   margin: 0 auto;
   display: block;
 }
 
-<<<<<<< HEAD
-.services-pricelist__info-block {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5%;
-}
-
-.services-pricelist__square {
-  height: 10px;
-  background-color: #3f3c20;
-  margin-right: 5%;
-  padding-right: 2.3%;
-  margin-top: 2.9%;
-=======
 .home-testimonials {
   position: relative;
   padding: 60px 0 151px 0;
@@ -1366,6 +1267,108 @@ p {
   text-align: center;
 }
 
+.services-pricelist {
+  padding: 60px 0 35px 0;
+}
+
+.services-pricelist__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.services-pricelist__item1 {
+  grid-area: item1;
+}
+
+.services-pricelist__item2 {
+  grid-area: item2;
+}
+
+.services-pricelist__item3 {
+  grid-area: item3;
+}
+
+.services-pricelist__item4 {
+  grid-area: item4;
+}
+
+.services-pricelist__item {
+  padding: 45px 60px;
+  width: 570px;
+  text-align: center;
+  background-color: #f6f1eb;
+  border-radius: 15px;
+  margin-bottom: 67px;
+}
+
+.services-pricelist__item-text-container {
+  min-height: 198px;
+}
+
+.services-pricelist__item-text,
+.services-pricelist__item-time,
+.services-pricelist__item-amount {
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
+.services-pricelist__item-title {
+  margin-bottom: 6%;
+}
+
+.services-pricelist__item-time-content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.services-pricelist__item-time-content1 {
+  margin-top: 21%;
+  margin-bottom: 12%;
+}
+
+.services-pricelist__item-time-content2 {
+  margin-top: 11%;
+  margin-bottom: 12%;
+}
+
+.services-pricelist__item-amount {
+  margin-top: 20%;
+}
+
+.services-pricelist__item-price {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.button_services-pricelist-btn_center {
+  margin: 0 auto;
+  display: block;
+}
+
+.services-pricelist__info-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  text-align: left;
+}
+
+.services-pricelist__square {
+  height: 10px;
+  background-color: #3f3c20;
+  margin-right: 5%;
+  padding-right: 2.3%;
+  margin-top: 2.9%;
+}
+
 .services-howwork {
   background-color: #f6f1eb;
 }
@@ -1453,7 +1456,7 @@ p {
   cursor: pointer;
   width: 32px;
   height: 32px;
-  background: linear-gradient(#3F3C20, #3F3C20), linear-gradient(#3F3C20, #3F3C20);
+  background: linear-gradient(#3f3c20, #3f3c20), linear-gradient(#3f3c20, #3f3c20);
   background-position: center;
   background-size: 100% 4px, 4px 100%;
   background-repeat: no-repeat;
@@ -1463,7 +1466,7 @@ p {
   cursor: pointer;
   width: 32px;
   height: 32px;
-  background: linear-gradient(#3F3C20, #3F3C20), linear-gradient(#3F3C20, #3F3C20);
+  background: linear-gradient(#3f3c20, #3f3c20), linear-gradient(#3f3c20, #3f3c20);
   background-position: center;
   background-size: 100% 4px, 4px 100%;
   background-repeat: no-repeat;
@@ -1719,5 +1722,4 @@ p {
   background-color: #3f3c20;
   margin-right: 6%;
   padding-right: 4.9%;
->>>>>>> f3e757441731426fa9ca49907fabf3f8aa41aba2
 }
