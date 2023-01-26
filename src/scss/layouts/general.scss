@@ -65,3 +65,12 @@ p {
 		max-width: 90%;
 	}
 }
+
+@media screen and (max-width: $big-mobile) {
+	.title {
+		font-size: 45px;
+	}
+	.button {
+		width: 300px;
+	}
+}
