@@ -47,7 +47,7 @@
 .about-Elena {
     position: relative;
     width: 100%;
-    min-height: 600px;
+    min-height: 650px;
 
 &__wrapper {
     display: flex;
@@ -120,11 +120,30 @@
     }
     
     .about-Elena {
-        min-height: 420px;
+        min-height: 400px;
     
     &__wrapper {
         margin-top: 30px;
     }
+
+    &__text_title {
+        font-size: 34px;
+    }
+    
+    &__text_first {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    &__text_second {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    &__background {
+        top: 10px;
+    }
+    
     } 
 }
 
@@ -169,7 +188,6 @@
     .about-quote {
         width: 100%;
         min-height: 110px;
-        background-color: #F6F1EB;
     
     &__wrapper {
         display: flex;
@@ -178,34 +196,24 @@
     }
     
     &_left {
-        font-family: $title-font;
         font-size: 54px;
-        color: #97A179;
     }
     
     &__text {
         margin: 15px 0 0 10px;
-        font-family: $title-font;
         font-size: 20px;
-        line-height: 140%;
-        color: #3F3C20;
     }
     
     &_right {
         margin: 35px 0 0 0;
-        font-family: $title-font;
         font-size: 54px;
-        color: #97A179;
         line-height: 0.5;
     }
     
     &__author {
         width: 100%;
         margin-top: 15px;
-        font-size: 10px;
-        color: #3F3C20;
-        text-align: right;
-        
+        font-size: 10px;        
     }
     }
 
@@ -230,23 +238,17 @@
         
         &__text_title {
             margin: 10px 0 0 0;
-            font-family: $title-font;
             font-size: 28px;
-            color: #3F3C20;
         }
         
         &__text_first {
             margin-top: 20px;
             font-size: 14px;
-            line-height: 140%;
-            color: #3F3C20;
         }
         
         &__text_second {
             margin: 20px 0;
             font-size: 14px;
-            line-height: 140%;
-            color: #3F3C20;
         }
 
         &__background {
@@ -260,7 +262,6 @@
     .about-quote {
         width: 100%;
         min-height: 80px;
-        background-color: #F6F1EB;
     
     &__wrapper {
         display: flex;
@@ -269,24 +270,17 @@
     }
     
     &_left {
-        font-family: $title-font;
         font-size: 48px;
-        color: #97A179;
     }
     
     &__text {
         margin: 15px 0 0 10px;
-        font-family: $title-font;
         font-size: 14px;
-        line-height: 140%;
-        color: #3F3C20;
     }
     
     &_right {
         margin: 25px 0 0 0;
-        font-family: $title-font;
         font-size: 48px;
-        color: #97A179;
         line-height: 0.5;
     }
     
@@ -294,9 +288,6 @@
         width: 100%;
         margin-top: 7px;
         font-size: 8px;
-        color: #3F3C20;
-        text-align: right;
-        
     }
     }
 
@@ -321,23 +312,17 @@
         
         &__text_title {
             margin: 10px 0 0 0;
-            font-family: $title-font;
             font-size: 24px;
-            color: #3F3C20;
         }
         
         &__text_first {
             margin-top: 20px;
             font-size: 12px;
-            line-height: 140%;
-            color: #3F3C20;
         }
         
         &__text_second {
             margin: 20px 0;
             font-size: 12px;
-            line-height: 140%;
-            color: #3F3C20;
         }
 
         &__background {
