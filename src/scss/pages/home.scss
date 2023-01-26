@@ -3,425 +3,423 @@
 // Диана
 
 .home-main {
-    background-color: $color-beige;
-    height: 622px;
+	background-color: $color-beige;
+	height: 622px;
+	.wrapper {
+		position: relative;
+	}
 }
 
 .home-main-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
 }
 
 .home-main__container-text {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-        &-title {
-            font-family:$title-font;
-            font-size: 4rem;
-            line-height: 130%;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-            padding-top: 7.12rem;
-        }
+	&-title {
+		font-family: $title-font;
+		font-size: 4rem;
+		line-height: 130%;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		padding-top: 7.12rem;
+	}
 
-        &-subtitle {
-            font-family: $default-font;
-            font-size: 1.5rem;
-            line-height: 140%;
-            letter-spacing: 0.02em;
-            padding-top: 0.44rem;
-            padding-bottom: 6rem;
-        }
+	&-subtitle {
+		font-family: $default-font;
+		font-size: 1.5rem;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+		padding-top: 0.44rem;
+		padding-bottom: 6rem;
+	}
 }
 
 .home-main__container-img {
-    position: absolute;
-    width: 506px;
-    height: 593px;
-    right: 3.91%;
-    top: 6.7%;
-}
-
-.wrapper {
-    position: relative;
+	position: absolute;
+	width: 506px;
+	height: 593px;
+	right: 3.91%;
+	top: 6.7%;
 }
 
 .home-coach-give {
-    height: 792px;
-    width: 100%;
-    position: relative;
+	height: 792px;
+	width: 100%;
+	position: relative;
 
-    &__container {
-        width: 100%;
-    }
+	&__container {
+		width: 100%;
+	}
 
-    &__img {
-        position: absolute;
-        right: 0%;
-        top: 4.42%;
-    }
+	&__img {
+		position: absolute;
+		right: 0%;
+		top: 4.42%;
+	}
 
-    &__title {
-        font-family: $title-font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 4rem;
-        line-height: 130%;
-        text-align: center;
-        letter-spacing: 0.02em;
-        padding-top: 3.75rem;
-        padding-bottom: 3.3rem;
-    }
+	&__title {
+		font-family: $title-font;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 4rem;
+		line-height: 130%;
+		text-align: center;
+		letter-spacing: 0.02em;
+		padding-top: 3.75rem;
+		padding-bottom: 3.3rem;
+	}
 
-    &__subtitle {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+	&__subtitle {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 
-        &-text {
-            margin-bottom: 1.9rem;
-            font-size: 1.5rem;
-            line-height: 140%;
-            letter-spacing: 0.02em;
-        }
-    }
+		&-text {
+			margin-bottom: 1.9rem;
+			font-size: 1.5rem;
+			line-height: 140%;
+			letter-spacing: 0.02em;
+		}
+	}
 }
 
 .home-work-with {
-    background-color: $color-beige;
-    height: 708px;
+	background-color: $color-beige;
+	height: 708px;
 
-    &__container {
-        width: 100%;
-    }
+	&__container {
+		width: 100%;
+	}
 
-    &__title {
-        font-family: $title-font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 4rem;
-        line-height: 130%;
-        text-align: center;
-        letter-spacing: 0.02em;
-        padding-top: 3.75rem;
-        padding-bottom: 3.3rem;
-    }
+	&__title {
+		font-family: $title-font;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 4rem;
+		line-height: 130%;
+		text-align: center;
+		letter-spacing: 0.02em;
+		padding-top: 3.75rem;
+		padding-bottom: 3.3rem;
+	}
 
-    &__subtitle {
-        font-size: 1.5rem;
-        line-height: 140%;
-        letter-spacing: 0.02em;
-        padding-bottom: 1.3rem;
-    }
+	&__subtitle {
+		font-size: 1.5rem;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+		padding-bottom: 1.3rem;
+	}
 
-    &__list-catalouge {
-        font-size: 1.5rem;
-        line-height: 140%;
-        letter-spacing: 0.02em;
-        display: flex;
+	&__list-catalouge {
+		font-size: 1.5rem;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+		display: flex;
 
-        &-text {
-            padding-left: 3.3rem;
-            padding-top: 1.43rem;
-        }
-    }
+		&-text {
+			padding-left: 3.3rem;
+			padding-top: 1.43rem;
+		}
+	}
 }
-
 
 // Альбина
 //section "services"
 .home-services {
-    padding: 60px 0 74px 0;
+	padding: 60px 0 74px 0;
 
-        &__container {
-            display: flex;
-            justify-content: center;
-            margin: 52px 0 78px 0;
-            flex-wrap: wrap;
-            gap: 60px;
-        }
-        
-        &__item {
-            padding: 34px 30px;
-            width: 360px;
-            min-height: 485px;
-            text-align: center;
-            background-color: $color-beige;
-            border-radius: 15px;
-        }
-        
-        &__item-title {
-            font-size: 36px;
-            margin-bottom: 32px;
-        }
-        
-        &__item-text-container {
-            min-height: 198px;
-        }
-        
-        &__item-text, &__item-time, 
-        &__item-amount {
-            font-size: 20px;
-            line-height: 140%;
-            letter-spacing: 0.02em;
-        }
-        
-        &__item-time-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 42px;
-            gap: 5.3px;
-        }
-        
-        &__item-amount {
-            margin-top: 30px;
-        }
-        
-        &__item-price {
-            margin-bottom: 32px;
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 140%;
-            text-align: center;
-            letter-spacing: 0.02em;
-        }
-        
-        &__buttons-container {
-            display: flex;
-            justify-content: space-between;
-        }
+	&__container {
+		display: flex;
+		justify-content: center;
+		margin: 52px 0 78px 0;
+		flex-wrap: wrap;
+		gap: 60px;
+	}
+
+	&__item {
+		padding: 34px 30px;
+		width: 360px;
+		min-height: 485px;
+		text-align: center;
+		background-color: $color-beige;
+		border-radius: 15px;
+	}
+
+	&__item-title {
+		font-size: 36px;
+		margin-bottom: 32px;
+	}
+
+	&__item-text-container {
+		min-height: 198px;
+	}
+
+	&__item-text,
+	&__item-time,
+	&__item-amount {
+		font-size: 20px;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+	}
+
+	&__item-time-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 42px;
+		gap: 5.3px;
+	}
+
+	&__item-amount {
+		margin-top: 30px;
+	}
+
+	&__item-price {
+		margin-bottom: 32px;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.02em;
+	}
+
+	&__buttons-container {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .button_home-services-btn_small {
-    width: 137px;
-    height: 58px;   
+	width: 137px;
+	height: 58px;
 }
 
 .button_home-services-btn_center {
-    margin: 0 auto;
-    display: block;
+	margin: 0 auto;
+	display: block;
 }
 
 //section "testimonials"
 .home-testimonials {
-    position: relative;
-    padding: 60px 0 151px 0;
-    background-color: $color-beige;
-    z-index: 1;
+	position: relative;
+	padding: 60px 0 151px 0;
+	background-color: $color-beige;
+	z-index: 1;
 
-        &__img-background {
-            position: absolute;
-            height: 100%;
-            transform: translateY(-60px);
-            z-index: -1;
-        }
-        
-        &__container {
-            display: flex;
-            flex-direction: column;
-            padding-left: 39.75%;
-            padding-right: 55px;
-            margin-top: 51px;
-        }
-        
-        &__item {
-            padding: 28px 33px 19px 33px;
-            margin-bottom: 38px;
-            width: 100%;
-            min-height: 207px;
-            letter-spacing: 0.02em;
-            background-color: #FFFFFF;
-            border-radius: 15px;
-        }
-        
-        &__item-text {
-            font-size: 20px;
-            line-height: 140%;
-        }
-        
-        &__item-author, &__item-date {
-            font-size: 16px;
-            line-height: 30px;
-        }
-        
-        &__item-author {
-            margin-top: 22px;
-            font-weight: 600;
-        }
-        
-        &__item-date {
-            font-weight: 300;
-        }
+	&__img-background {
+		position: absolute;
+		height: 100%;
+		transform: translateY(-60px);
+		z-index: -1;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		padding-left: 39.75%;
+		padding-right: 55px;
+		margin-top: 51px;
+	}
+
+	&__item {
+		padding: 28px 33px 19px 33px;
+		margin-bottom: 38px;
+		width: 100%;
+		min-height: 207px;
+		letter-spacing: 0.02em;
+		background-color: #ffffff;
+		border-radius: 15px;
+	}
+
+	&__item-text {
+		font-size: 20px;
+		line-height: 140%;
+	}
+
+	&__item-author,
+	&__item-date {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	&__item-author {
+		margin-top: 22px;
+		font-weight: 600;
+	}
+
+	&__item-date {
+		font-weight: 300;
+	}
 }
 
 //section "home-question"
 .home-question {
-    padding: 60px 0;
-    text-align: center;
+	padding: 60px 0;
+	text-align: center;
 
-        &__text {
-            margin: 13px 0 70px 0;
-            font-size: 36px;
-            line-height: 140%;
-            letter-spacing: 0.02em;
-        }
+	&__text {
+		margin: 13px 0 70px 0;
+		font-size: 36px;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+	}
 }
-
 
 /* ------------------------ Media queries ------------------------ */
 @media screen and (max-width: $large-desktop) {
-    // Диана
+	// Диана
 
-    // Альбина
+	// Альбина
 }
 
 @media screen and (max-width: $desktop) {
-    // Диана
-    .home-coach-give {
-        &__subtitle {
-            width: 70%;
-        }
-    }
+	// Диана
+	.home-coach-give {
+		&__subtitle {
+			width: 70%;
+		}
+	}
 
-    .home-work-with {
-        &__subtitle {
-            width: 90%;
-        }
+	.home-work-with {
+		&__subtitle {
+			width: 90%;
+		}
 
-        &__list-catalouge {
-            width: 90%;
-        }
-    }
-    // Альбина
-    .home-services {
-        padding: 60px 0 60px 0;
+		&__list-catalouge {
+			width: 90%;
+		}
+	}
+	// Альбина
+	.home-services {
+		padding: 60px 0 60px 0;
 
-            &__container {
-                margin: 52px 0 60px 0;
-            }
-    }
+		&__container {
+			margin: 52px 0 60px 0;
+		}
+	}
 
-    .home-testimonials {
-        padding: 60px 0 60px 0;
+	.home-testimonials {
+		padding: 60px 0 60px 0;
 
-            &__img-background {
-                display: none;
-            }
-        
-            &__container {
-                padding: 0 10px 0 10px;  
-                align-items: center;
-            }
-            
-            &__item {
-                width: 80%;
-            }
-    }
+		&__img-background {
+			display: none;
+		}
+
+		&__container {
+			padding: 0 10px 0 10px;
+			align-items: center;
+		}
+
+		&__item {
+			width: 80%;
+		}
+	}
 }
 
 @media screen and (max-width: $big-tablet) {
-    // Диана
-    .home-main__container-img {
-        right: -2%;
-    }
+	// Диана
+	.home-main__container-img {
+		right: -2%;
+	}
 
-    .home-main__container-text {
-        width: 80%;
+	.home-main__container-text {
+		width: 80%;
 
-        &-title {
-            font-size: 3.8rem;
-        }
+		&-title {
+			font-size: 3.8rem;
+		}
 
-        &-subtitle {
-            font-size: 1.3rem;
-        }
-    }
+		&-subtitle {
+			font-size: 1.3rem;
+		}
+	}
 
-.home-coach-give {
-    &__container {
-        width: 90%;
-        padding-top: 5%;
-    }
+	.home-coach-give {
+		&__container {
+			width: 90%;
+			padding-top: 5%;
+		}
 
-    &__img {
-        display: none;
-    }
+		&__img {
+			display: none;
+		}
 
-    &__title {
-        padding-left: 10%;
-        font-size: 3.8rem;
-    }
+		&__title {
+			padding-left: 10%;
+			font-size: 3.8rem;
+		}
 
-    &__subtitle {
-        width: 100%;
+		&__subtitle {
+			width: 100%;
 
-        &-text {
-            padding-left: 11%;
-            font-size: 1.3rem;
-        }
-    }
-}
+			&-text {
+				padding-left: 11%;
+				font-size: 1.3rem;
+			}
+		}
+	}
 
-.home-work-with {
-    &__container {
-        width: 100%;
-    }
+	.home-work-with {
+		&__container {
+			width: 100%;
+		}
 
-    &__title {
-        font-size: 3.8rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
+		&__title {
+			font-size: 3.8rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+		}
 
-    &__subtitle {
-        font-size: 1.3rem;
-    }
+		&__subtitle {
+			font-size: 1.3rem;
+		}
 
-    &__list {
-        width: 100%;
-    }
+		&__list {
+			width: 100%;
+		}
 
-    &__list-catalouge {
-        width: 100%;
-        font-size: 1.3rem;
-    }
-}
+		&__list-catalouge {
+			width: 100%;
+			font-size: 1.3rem;
+		}
+	}
 
-    // Альбина
-    .home-testimonials__item {
-        width: 85%;
-    }
+	// Альбина
+	.home-testimonials__item {
+		width: 85%;
+	}
 }
 
 @media screen and (max-width: $tablet) {
-    // Диана
-    
-    // Альбина
-    .home-testimonials__item {
-        width: 90%;
-    }
+	// Диана
 
+	// Альбина
+	.home-testimonials__item {
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: $big-mobile) {
-    // Диана
-    
-    // Альбина
-    .home-question__text {
-        margin: 13px 0 60px 0;
-        font-size: 30px;
-    }
+	// Диана
+
+	// Альбина
+	.home-question__text {
+		margin: 13px 0 60px 0;
+		font-size: 30px;
+	}
 }
 
 @media screen and (max-width: $mobile) {
-    // Диана
-    
-    // Альбина
-    .button_home-services-btn_small {
-        width: 110px; 
-    }
+	// Диана
+
+	// Альбина
+	.button_home-services-btn_small {
+		width: 110px;
+	}
 }

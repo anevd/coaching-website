@@ -663,6 +663,9 @@ p {
   background-color: #f6f1eb;
   height: 622px;
 }
+.home-main .wrapper {
+  position: relative;
+}
 
 .home-main-container {
   width: 100%;
@@ -698,10 +701,6 @@ p {
   height: 593px;
   right: 3.91%;
   top: 6.7%;
-}
-
-.wrapper {
-  position: relative;
 }
 
 .home-coach-give {
@@ -863,7 +862,7 @@ p {
   width: 100%;
   min-height: 207px;
   letter-spacing: 0.02em;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
 }
 .home-testimonials__item-text {
@@ -1288,6 +1287,9 @@ p {
 }
 .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
   padding-bottom: 30px;
+  line-height: 140%;
+  font-size: 24px;
+  letter-spacing: 0.02em;
 }
 .about-path__paragraph1 {
   padding-top: 20px;
@@ -1342,6 +1344,15 @@ p {
     justify-content: space-between;
     align-items: center;
     margin-top: 4%;
+  }
+  .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
+    font-size: 15px;
+    text-align: center;
   }
 }
 .services-pricelist {

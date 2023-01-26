@@ -357,6 +357,9 @@
 	&__paragraph2,
 	&__paragraph3 {
 		padding-bottom: 30px;
+		line-height: 140%;
+		font-size: 24px;
+		letter-spacing: 0.02em;
 	}
 
 	&__paragraph1 {
@@ -416,5 +419,23 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 4%;
+	}
+	.about-path {
+		&__paragraph1,
+		&__paragraph2,
+		&__paragraph3 {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: $big-mobile) {
+	.about-path {
+		&__paragraph1,
+		&__paragraph2,
+		&__paragraph3 {
+			font-size: 15px;
+			text-align: center;
+		}
 	}
 }
