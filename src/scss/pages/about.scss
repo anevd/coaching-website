@@ -47,7 +47,7 @@
 .about-Elena {
     position: relative;
     width: 100%;
-    min-height: 680px;
+    min-height: 600px;
 
 &__wrapper {
     display: flex;
@@ -107,24 +107,29 @@
 }
 
 @media screen and (max-width: $desktop) {
-    
+
 }
 
 
 @media screen and (max-width: $big-tablet) {
-   
+    .about-quote {
+        min-height: 230px;
+    
+    &__wrapper {
+        padding: 15px 0 0 0;
+    }
+    }
+    
+    .about-Elena {
+        min-height: 420px;
+    
+    &__wrapper {
+        margin-top: 30px;
+    }
+    } 
 }
 
 @media screen and (max-width: $tablet) {
-    // .about-quote {
-    //     width: 100%;
-    //     min-height: 360px;
-    // }
-    
-    // &__wrapper {
-    //     width: 90%;
-    // }
-
     .about-Elena {
     
     &__wrapper {

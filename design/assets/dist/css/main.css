@@ -991,7 +991,7 @@ p {
 .about-Elena {
   position: relative;
   width: 100%;
-  min-height: 680px;
+  min-height: 600px;
 }
 .about-Elena__wrapper {
   display: flex;
@@ -1035,6 +1035,20 @@ p {
 }
 
 /* ------------------------ Media queries ------------------------ */
+@media screen and (max-width: 1025px) {
+  .about-quote {
+    min-height: 230px;
+  }
+  .about-quote__wrapper {
+    padding: 15px 0 0 0;
+  }
+  .about-Elena {
+    min-height: 420px;
+  }
+  .about-Elena__wrapper {
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .about-Elena__wrapper {
     display: flex;
