@@ -894,11 +894,17 @@ p {
 /* ------------------------ Media queries ------------------------ */
 @media screen and (max-width: 1280px) {
   .home-main__container-img {
-    max-width: 506px;
-    max-height: 593px;
+    right: 0%;
   }
   .home-coach-give__subtitle {
     max-width: 70%;
+    padding-left: 5%;
+  }
+  .home-work-with__container {
+    padding-left: 5%;
+  }
+  .home-work-with__list {
+    padding-left: 5%;
   }
   .home-services {
     padding: 60px 0 60px 0;

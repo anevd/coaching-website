@@ -283,14 +283,22 @@
 @media screen and (max-width: $desktop) {
     // Диана
     .home-main__container-img {
-        max-width: 506px;
-        max-height: 593px;
+        right: 0%;
     }
-
     .home-coach-give {
-
         &__subtitle {
             max-width: 70%;
+            padding-left: 5%;
+        }
+    }
+
+    .home-work-with {
+        &__container {
+            padding-left: 5%;
+        }
+
+        &__list {
+            padding-left: 5%;
         }
     }
 
