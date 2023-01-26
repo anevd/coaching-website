@@ -830,6 +830,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 35px;
 }
 .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
   padding-bottom: 30px;
@@ -849,7 +850,6 @@ p {
 
 .about-ages {
   display: flex;
-  height: 19vw;
   justify-content: space-between;
   margin-top: 4%;
 }

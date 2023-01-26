@@ -6,95 +6,95 @@
     height: 50vh;
     background-color: #F6F1EB;
 
-&__wrapper {
-    display: flex;
-    width: 53vw;
-    padding: 7vh 0 0 0;
-}
+    &__wrapper {
+        display: flex;
+        width: 53vw;
+        padding: 7vh 0 0 0;
+    }
 
-&_left {
-    font-family: $title-font;
-    font-size: 8vw;
-    color: #97A179;
-}
+    &_left {
+        font-family: $title-font;
+        font-size: 8vw;
+        color: #97A179;
+    }
 
-&__text {
-    margin: 10vh 0 0 1vw;
-    font-family: $title-font;
-    font-size: 3vw;
-    color: #3F3C20;
-}
+    &__text {
+        margin: 10vh 0 0 1vw;
+        font-family: $title-font;
+        font-size: 3vw;
+        color: #3F3C20;
+    }
 
-&_right {
-    margin: 23vh 0 0 0;
-    font-family: $title-font;
-    font-size: 8vw;
-    color: #97A179;
-    line-height: 0.5;
-}
+    &_right {
+        margin: 23vh 0 0 0;
+        font-family: $title-font;
+        font-size: 8vw;
+        color: #97A179;
+        line-height: 0.5;
+    }
 
-&__author {
-    width: 53vw;
-    font-family: $default-font;
-    font-size: 1.5vw;
-    color: #3F3C20;
-    text-align: right;
-    
-}
+    &__author {
+        width: 53vw;
+        font-family: $default-font;
+        font-size: 1.5vw;
+        color: #3F3C20;
+        text-align: right;
+
+    }
 }
 
 .about-Elena {
     width: 100%;
     height: 92vh;
 
-&__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-top: 15vh;
-}
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15vh;
+    }
 
-&__photo {
-    width: 40%;
-}
+    &__photo {
+        width: 40%;
+    }
 
-&__photo img {
-    width: 100%;
-}
+    &__photo img {
+        width: 100%;
+    }
 
-&__text {
-    margin-left: 4vw;
-    width: 44%;
-    
-}
+    &__text {
+        margin-left: 4vw;
+        width: 44%;
 
-&__text_title {
-    margin-bottom: 0;
-    font-family: $title-font;
-    font-size: 4vw;
-    color: #3F3C20;
-    
-}
+    }
 
-&__text_first {
-    margin-top: 7vh;
-    font-family: $default-font;
-    font-size: 1.5vw;
-    color: #3F3C20;
-}
+    &__text_title {
+        margin-bottom: 0;
+        font-family: $title-font;
+        font-size: 4vw;
+        color: #3F3C20;
 
-&__text_second {
-    margin-top: 7vh;
-    font-family: $default-font;
-    font-size: 1.5vw;
-    color: #3F3C20;
-}
+    }
 
-&__background {
-    position: absolute;
-    top: 60vh;
-    right: 0;
-    width: 26.75vw;
-}
+    &__text_first {
+        margin-top: 7vh;
+        font-family: $default-font;
+        font-size: 1.5vw;
+        color: #3F3C20;
+    }
+
+    &__text_second {
+        margin-top: 7vh;
+        font-family: $default-font;
+        font-size: 1.5vw;
+        color: #3F3C20;
+    }
+
+    &__background {
+        position: absolute;
+        top: 60vh;
+        right: 0;
+        width: 26.75vw;
+    }
 
 
 }
@@ -108,6 +108,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 35px;
 
     &__paragraph1,
     &__paragraph2,
@@ -134,11 +135,8 @@
 
 .about-ages {
     display: flex;
-    height: 19vw;
     justify-content: space-between;
     margin-top: 4%;
-
-
 }
 
 .about-card {
