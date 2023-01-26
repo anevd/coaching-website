@@ -1119,11 +1119,11 @@ p {
   }
   .about-Elena__text_first {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 20px;
   }
   .about-Elena__text_second {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 20px;
   }
   .about-Elena__background {
     top: 10px;
@@ -1150,18 +1150,26 @@ p {
     min-height: 370px;
   }
   .about-Elena__wrapper {
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .about-Elena__photo {
+    width: 85%;
+  }
+  .about-Elena__text {
+    margin-left: 0;
+    width: 80%;
   }
   .about-Elena__text_title {
-    font-size: 34px;
+    margin-top: 20px;
   }
   .about-Elena__text_first {
-    margin-top: 20px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .about-Elena__text_second {
-    margin-top: 20px;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1192,29 +1200,14 @@ p {
   .about-Elena {
     min-height: 350px;
   }
-  .about-Elena__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .about-Elena__photo {
-    width: 85%;
-  }
-  .about-Elena__text {
-    margin-left: 0;
-    width: 80%;
-  }
   .about-Elena__text_title {
     margin: 10px 0 0 0;
     font-size: 28px;
   }
   .about-Elena__text_first {
-    margin-top: 20px;
     font-size: 14px;
   }
   .about-Elena__text_second {
-    margin: 20px 0;
     font-size: 14px;
   }
   .about-Elena__background {
@@ -1337,6 +1330,11 @@ p {
   text-align: center;
 }
 
+@media screen and (max-width: 1025px) {
+  .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .about-ages {
     display: flex;
@@ -1346,13 +1344,18 @@ p {
     margin-top: 4%;
   }
   .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 480px) {
   .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
+    font-size: 12px;
   }
 }
 .services-pricelist {
