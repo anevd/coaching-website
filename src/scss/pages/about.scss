@@ -75,7 +75,6 @@
     font-family: $title-font;
     font-size: 4vw;
     color: #3F3C20;
-    
 }
 
 &__text_first {
@@ -130,19 +129,40 @@
 }
 
 @media screen and (max-width: $tablet) {
-    .about-Elena {
+    .about-quote {
+        min-height: 230px;
     
     &__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 15px 0 0 0;
+    }
+    }
+    
+    .about-Elena {
+        min-height: 370px;
+    
+    &__wrapper {
+        margin-top: 30px;
     }
 
+    &__text_title {
+        font-size: 34px;
+    }
+    
+    &__text_first {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    &__text_second {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
     &__background {
-        display: none;
+        top: 10px;
     }
-
-}
+    
+    } 
 }
 
 @media screen and (max-width: $big-mobile) {

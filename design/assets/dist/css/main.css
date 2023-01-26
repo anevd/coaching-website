@@ -1050,13 +1050,31 @@ p {
   }
 }
 @media screen and (max-width: 768px) {
+  .about-quote {
+    min-height: 230px;
+  }
+  .about-quote__wrapper {
+    padding: 15px 0 0 0;
+  }
+  .about-Elena {
+    min-height: 370px;
+  }
   .about-Elena__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 30px;
+  }
+  .about-Elena__text_title {
+    font-size: 34px;
+  }
+  .about-Elena__text_first {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .about-Elena__text_second {
+    margin-top: 20px;
+    font-size: 14px;
   }
   .about-Elena__background {
-    display: none;
+    top: 10px;
   }
 }
 @media screen and (max-width: 480px) {
