@@ -1265,6 +1265,11 @@ p {
   padding-top: 3%;
 }
 
+.testimonials {
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+
 .testimonials-item {
   display: flex;
   margin-top: 6%;
@@ -1278,14 +1283,14 @@ p {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 5px;
 }
 
 .testimonials-item__user_date {
   font-weight: 300;
   font-size: 20px;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 5px;
 }
 
 .testimonials-item__user {
@@ -1308,6 +1313,7 @@ p {
   padding: 4% 5% 4% 5%;
   height: min-content;
   position: relative;
+  margin-top: 20px;
 }
 
 .testimonials-item__user_text-block::after {
@@ -1327,7 +1333,7 @@ p {
   content: "";
   position: absolute;
   transform: scale(-1, 1);
-  left: 899px;
+  left: 100%;
   top: 55px;
 }
 
@@ -1373,6 +1379,7 @@ p {
     line-height: 140%;
     padding: 4% 5% 4% 5%;
     height: min-content;
+    text-align: center;
   }
   .testimonials-item__user_text-block::after {
     display: none;
