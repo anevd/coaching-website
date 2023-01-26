@@ -861,7 +861,7 @@ p {
   width: 100%;
   min-height: 207px;
   letter-spacing: 0.02em;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
 }
 .home-testimonials__item-text {
@@ -995,51 +995,50 @@ p {
   }
 }
 .about-quote {
-  width: 100%;
   min-height: 342px;
-  background-color: #F6F1EB;
+  background-color: #f6f1eb;
+  padding: 92px 0 59px 0;
 }
 .about-quote__wrapper {
   display: flex;
-  width: 53vw;
-  padding: 25px 0 0 0;
+  width: 70%;
 }
 .about-quote_left {
   font-family: "Oranienbaum", serif;
   font-size: 8vw;
-  color: #97A179;
+  color: #97a179;
 }
 .about-quote__text {
   margin: 35px 0 0 1vw;
   font-family: "Oranienbaum", serif;
-  font-size: 3vw;
+  font-size: 48px;
   line-height: 140%;
-  color: #3F3C20;
+  color: #3f3c20;
 }
 .about-quote_right {
   margin: 80px 0 0 0;
   font-family: "Oranienbaum", serif;
   font-size: 8vw;
-  color: #97A179;
+  color: #97a179;
   line-height: 0.5;
 }
 .about-quote__author {
-  width: 53vw;
+  width: 70%;
   margin-top: 40px;
-  font-size: 1.5vw;
-  color: #3F3C20;
+  font-size: 24px;
+  color: #3f3c20;
   text-align: right;
 }
 
 .about-Elena {
   position: relative;
-  width: 100%;
+  padding: 101px 0 169px 0;
   min-height: 650px;
+  overflow: hidden;
 }
 .about-Elena__wrapper {
   display: flex;
   flex-direction: row;
-  margin-top: 15vh;
 }
 .about-Elena__photo {
   margin-top: 1%;
@@ -1050,40 +1049,69 @@ p {
 }
 .about-Elena__text {
   margin-left: 4vw;
-  width: 44%;
+  width: 45%;
 }
-.about-Elena__text__text_title {
+.about-Elena__text_title {
   margin-bottom: 0;
   font-family: "Oranienbaum", serif;
-  font-size: 4vw;
-  color: #3F3C20;
+  font-size: 64px;
+  color: #3f3c20;
 }
-.about-Elena__text__text_first {
-  margin-top: 7vh;
-  font-size: 1.5vw;
+.about-Elena__text_first {
+  margin-top: 43px;
+  font-size: 24px;
   line-height: 140%;
-  color: #3F3C20;
+  color: #3f3c20;
 }
-.about-Elena__text__text_second {
-  margin-top: 7vh;
-  font-size: 1.5vw;
+.about-Elena__text_second {
+  margin-top: 43px;
+  font-size: 24px;
   line-height: 140%;
-  color: #3F3C20;
+  color: #3f3c20;
+  width: 80%;
 }
-.about-Elena__text__background {
+.about-Elena__background {
   position: absolute;
-  top: -30px;
+  top: 59px;
   right: 0;
-  width: 26.75vw;
 }
 
 /* ------------------------ Media queries ------------------------ */
+@media screen and (max-width: 1370px) {
+  .about-Elena__background {
+    top: 138px;
+    width: 370px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .about-quote {
+    padding: 4% 0 4% 0;
+  }
+  .about-quote__text {
+    font-size: 40px;
+  }
+  .about-Elena {
+    padding: 4% 0 6% 0;
+  }
+  .about-Elena__background {
+    display: none;
+  }
+  .about-Elena__text {
+    width: 50%;
+  }
+  .about-Elena__text_second {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1025px) {
   .about-quote {
     min-height: 230px;
   }
   .about-quote__wrapper {
     padding: 15px 0 0 0;
+  }
+  .about-quote_right {
+    margin-top: 130px;
   }
   .about-Elena {
     min-height: 400px;
@@ -1096,11 +1124,11 @@ p {
   }
   .about-Elena__text_first {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 20px;
   }
   .about-Elena__text_second {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 20px;
   }
   .about-Elena__background {
     top: 10px;
@@ -1112,57 +1140,19 @@ p {
   }
   .about-quote__wrapper {
     padding: 15px 0 0 0;
-  }
-  .about-Elena {
-    min-height: 370px;
-  }
-  .about-Elena__wrapper {
-    margin-top: 30px;
-  }
-  .about-Elena__text_title {
-    font-size: 34px;
-  }
-  .about-Elena__text_first {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  .about-Elena__text_second {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  .about-Elena__background {
-    top: 10px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .about-quote {
     width: 100%;
-    min-height: 110px;
-  }
-  .about-quote__wrapper {
-    display: flex;
-    width: 100%;
-    padding: 0;
   }
   .about-quote_left {
-    font-size: 54px;
-  }
-  .about-quote__text {
-    margin: 15px 0 0 10px;
-    font-size: 20px;
+    font-size: 60px;
   }
   .about-quote_right {
-    margin: 35px 0 0 0;
-    font-size: 54px;
-    line-height: 0.5;
+    font-size: 60px;
   }
   .about-quote__author {
     width: 100%;
-    margin-top: 15px;
-    font-size: 10px;
   }
   .about-Elena {
-    min-height: 350px;
+    min-height: 370px;
   }
   .about-Elena__wrapper {
     display: flex;
@@ -1178,15 +1168,51 @@ p {
     width: 80%;
   }
   .about-Elena__text_title {
+    margin-top: 20px;
+  }
+  .about-Elena__text_first {
+    font-size: 18px;
+  }
+  .about-Elena__text_second {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-quote {
+    width: 100%;
+    min-height: 110px;
+  }
+  .about-quote__wrapper {
+    display: flex;
+    padding: 0;
+  }
+  .about-quote_left {
+    font-size: 54px;
+  }
+  .about-quote__text {
+    margin: 15px 0 0 10px;
+    font-size: 20px;
+  }
+  .about-quote_right {
+    margin: 35px 0 0 0;
+    font-size: 54px;
+    line-height: 0.5;
+  }
+  .about-quote__author {
+    margin-top: 15px;
+    font-size: 10px;
+  }
+  .about-Elena {
+    min-height: 350px;
+  }
+  .about-Elena__text_title {
     margin: 10px 0 0 0;
     font-size: 28px;
   }
   .about-Elena__text_first {
-    margin-top: 20px;
     font-size: 14px;
   }
   .about-Elena__text_second {
-    margin: 20px 0;
     font-size: 14px;
   }
   .about-Elena__background {
@@ -1217,7 +1243,7 @@ p {
   }
   .about-quote__author {
     width: 100%;
-    margin-top: 7px;
+    margin-top: 17px;
     font-size: 8px;
   }
   .about-Elena {
@@ -1248,9 +1274,6 @@ p {
     margin: 20px 0;
     font-size: 12px;
   }
-  .about-Elena__background {
-    display: none;
-  }
 }
 .about-path {
   background-color: #f6f1eb;
@@ -1262,7 +1285,9 @@ p {
 }
 .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
   padding-bottom: 30px;
-  width: 75vw;
+  line-height: 140%;
+  font-size: 24px;
+  letter-spacing: 0.02em;
 }
 .about-path__paragraph1 {
   padding-top: 20px;
@@ -1307,10 +1332,37 @@ p {
 .about-card__description {
   font-weight: bold;
   font-size: 24px;
-  width: 20vw;
   text-align: center;
 }
 
+@media screen and (max-width: 1025px) {
+  .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-ages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
+  }
+  .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-path__paragraph1, .about-path__paragraph2, .about-path__paragraph3 {
+    font-size: 12px;
+  }
+}
 .services-pricelist {
   padding: 60px 0 35px 0;
 }
@@ -1718,7 +1770,8 @@ p {
 }
 .contact {
   background-color: #fff;
-  padding: 5% 5% 10% 5%;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 .contact__container {
   margin-top: 10%;
@@ -1807,9 +1860,8 @@ p {
   .contact__social {
     display: none;
   }
-  .contact__button {
-    margin-left: auto;
-    margin-right: auto;
+  .contact__btn-link {
+    margin: 0 auto;
   }
   .square {
     height: 15px;
@@ -1846,9 +1898,8 @@ p {
   .contact__social {
     display: none;
   }
-  .contact__button {
-    margin-left: auto;
-    margin-right: auto;
+  .contact__btn-link {
+    margin: 0 auto;
   }
   .square {
     height: 12px;
@@ -1881,9 +1932,8 @@ p {
   .contact__social {
     display: none;
   }
-  .contact__button {
-    margin-left: auto;
-    margin-right: auto;
+  .contact__btn-link {
+    margin: 0 auto;
   }
   .square {
     height: 10px;
