@@ -1,56 +1,55 @@
 @import "../layouts/variables.scss";
 
 // Диана
-
 .home-main {
     background-color: $color-beige;
-    height: 622px;
-}
+    min-height: 622px;
+    height: 100%;
+    .wrapper {
+        position: relative;
+    }
 
-.home-main-container {
+    &__container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-}
 
-.home-main__container-text {
-    display: flex;
-    flex-direction: column;
+            &-img {
+            position: absolute;
+            width: 506px;
+            height: 593px;
+            right: 3.91%;
+            top: 6.7%;
+            }
 
-        &-title {
-            font-family:$title-font;
-            font-size: 4rem;
-            line-height: 130%;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-            padding-top: 7.12rem;
+            &-text {
+            display: flex;
+            flex-direction: column;
+
+                &-title {
+                font-family:$title-font;
+                font-size: 4rem;
+                line-height: 130%;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                padding-top: 7.12rem;
+                }
+
+                &-subtitle {
+                font-family: $default-font;
+                font-size: 1.5rem;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+                padding-top: 0.44rem;
+                padding-bottom: 6rem;
+                }
+            }
         }
-
-        &-subtitle {
-            font-family: $default-font;
-            font-size: 1.5rem;
-            line-height: 140%;
-            letter-spacing: 0.02em;
-            padding-top: 0.44rem;
-            padding-bottom: 6rem;
-        }
-}
-
-.home-main__container-img {
-    position: absolute;
-    width: 506px;
-    height: 593px;
-    right: 3.91%;
-    top: 6.7%;
-}
-
-.wrapper {
-    position: relative;
-}
+    }
 
 .home-coach-give {
-    height: 792px;
+    min-height: 792px;
     width: 100%;
     position: relative;
 
@@ -91,43 +90,44 @@
 }
 
 .home-work-with {
-    background-color: $color-beige;
-    height: 708px;
+	background-color: $color-beige;
+	min-height: 708px;
+    height: 100%;
 
-    &__container {
-        width: 100%;
-    }
+	&__container {
+		width: 100%;
+	}
 
-    &__title {
-        font-family: $title-font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 4rem;
-        line-height: 130%;
-        text-align: center;
-        letter-spacing: 0.02em;
-        padding-top: 3.75rem;
-        padding-bottom: 3.3rem;
-    }
+	&__title {
+		font-family: $title-font;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 4rem;
+		line-height: 130%;
+		text-align: center;
+		letter-spacing: 0.02em;
+		padding-top: 3.75rem;
+		padding-bottom: 3.3rem;
+	}
 
-    &__subtitle {
-        font-size: 1.5rem;
-        line-height: 140%;
-        letter-spacing: 0.02em;
-        padding-bottom: 1.3rem;
-    }
+	&__subtitle {
+		font-size: 1.5rem;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+		padding-bottom: 1.3rem;
+	}
 
-    &__list-catalouge {
-        font-size: 1.5rem;
-        line-height: 140%;
-        letter-spacing: 0.02em;
-        display: flex;
+	&__list-catalouge {
+		font-size: 1.5rem;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+		display: flex;
 
-        &-text {
-            padding-left: 3.3rem;
-            padding-top: 1.43rem;
-        }
-    }
+		&-text {
+			padding-left: 3.3rem;
+			padding-top: 1.43rem;
+		}
+	}
 }
 
 
@@ -276,26 +276,24 @@
 @media screen and (max-width: $large-desktop) {
     // Диана
 
+    
     // Альбина
 }
 
 @media screen and (max-width: $desktop) {
     // Диана
+    .home-main__container-img {
+        max-width: 506px;
+        max-height: 593px;
+    }
+
     .home-coach-give {
+
         &__subtitle {
-            width: 70%;
+            max-width: 70%;
         }
     }
 
-    .home-work-with {
-        &__subtitle {
-            width: 90%;
-        }
-
-        &__list-catalouge {
-            width: 90%;
-        }
-    }
     // Альбина
     .home-services {
         padding: 60px 0 60px 0;
@@ -343,8 +341,8 @@
 
 .home-coach-give {
     &__container {
-        width: 90%;
-        padding-top: 5%;
+        width: 100%;
+        padding-top: 1%;
     }
 
     &__img {
@@ -358,35 +356,10 @@
 
     &__subtitle {
         width: 100%;
-
-        &-text {
-            padding-left: 11%;
-            font-size: 1.3rem;
-        }
-    }
-}
-
-.home-work-with {
-    &__container {
-        width: 100%;
     }
 
-    &__title {
-        font-size: 3.8rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    &__subtitle {
-        font-size: 1.3rem;
-    }
-
-    &__list {
-        width: 100%;
-    }
-
-    &__list-catalouge {
-        width: 100%;
+    &__subtitle-text {
+        padding-left: 11%;
         font-size: 1.3rem;
     }
 }
@@ -399,13 +372,42 @@
 
 @media screen and (max-width: $tablet) {
     // Диана
+    .home-main__container-img {
+        display: none;
+    }
+
+    .home-main__container-text {
+        width: 100%;
+        padding-left: 17%;
+    }
+
+.home-coach-give {
+    &__container {
+        width: 100%;
+        padding-top: 12%;
+    }
+
+    &__title {
+        padding-left: 2%;
+        font-size: 3.4rem;
+    }
+
+    &__subtitle {
+        padding-left: 1%;
+    }
+
+    &__subtitle-text {
+        padding-left: 1%;
+        font-size: 1.2rem;
+    }
+    }
+}
+
     
     // Альбина
     .home-testimonials__item {
         width: 90%;
     }
-
-}
 
 @media screen and (max-width: $big-mobile) {
     // Диана
