@@ -1,57 +1,57 @@
 @import "../layouts/variables.scss";
 
 // Диана
-
 .home-main {
-	background-color: $color-beige;
-	height: 622px;
-	.wrapper {
-		position: relative;
-	}
-}
+    background-color: $color-beige;
+    min-height: 622px;
+    height: 100%;
+    .wrapper {
+        position: relative;
+    }
 
-.home-main-container {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-}
+    &__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 
-.home-main__container-text {
-	display: flex;
-	flex-direction: column;
+            &-img {
+            position: absolute;
+            width: 506px;
+            height: 593px;
+            right: 3.91%;
+            top: 6.7%;
+            }
 
-	&-title {
-		font-family: $title-font;
-		font-size: 4rem;
-		line-height: 130%;
-		letter-spacing: 0.02em;
-		text-transform: uppercase;
-		padding-top: 7.12rem;
-	}
+            &-text {
+            display: flex;
+            flex-direction: column;
 
-	&-subtitle {
-		font-family: $default-font;
-		font-size: 1.5rem;
-		line-height: 140%;
-		letter-spacing: 0.02em;
-		padding-top: 0.44rem;
-		padding-bottom: 6rem;
-	}
-}
+                &-title {
+                font-family:$title-font;
+                font-size: 4rem;
+                line-height: 130%;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                padding-top: 7.12rem;
+                }
 
-.home-main__container-img {
-	position: absolute;
-	width: 506px;
-	height: 593px;
-	right: 3.91%;
-	top: 6.7%;
-}
+                &-subtitle {
+                font-family: $default-font;
+                font-size: 1.5rem;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+                padding-top: 0.44rem;
+                padding-bottom: 6rem;
+                }
+            }
+        }
+    }
 
 .home-coach-give {
-	height: 792px;
-	width: 100%;
-	position: relative;
+    min-height: 792px;
+    width: 100%;
+    position: relative;
 
 	&__container {
 		width: 100%;
@@ -91,7 +91,8 @@
 
 .home-work-with {
 	background-color: $color-beige;
-	height: 708px;
+	min-height: 710px;
+    height: 100%;
 
 	&__container {
 		width: 100%;
@@ -117,12 +118,12 @@
 	}
 
 	&__list-catalouge {
-		font-size: 1.5rem;
-		line-height: 140%;
-		letter-spacing: 0.02em;
 		display: flex;
 
 		&-text {
+            font-size: 1.5rem;
+            line-height: 140%;
+            letter-spacing: 0.02em;
 			padding-left: 3.3rem;
 			padding-top: 1.43rem;
 		}
@@ -275,29 +276,72 @@
 @media screen and (max-width: $large-desktop) {
 	// Диана
 
-	// Альбина
+    
+    // Альбина
 }
 
 @media screen and (max-width: $desktop) {
-	// Диана
-	.home-coach-give {
-		&__subtitle {
-			width: 70%;
-		}
-	}
+    // Диана
+    .home-main__container {
+    &-text {
+        .button {
+            max-width: 80%;
+        }
+    }
 
-	.home-work-with {
-		&__subtitle {
-			width: 90%;
-		}
+    &-img {
+        width: 456px;
+        height: 543px;
+        right: -5%;
+        top: 14%;
+    }
+}
 
-		&__list-catalouge {
-			width: 90%;
-		}
-	}
-	// Альбина
-	.home-services {
-		padding: 60px 0 60px 0;
+    .home-coach-give {
+        &__img {
+            width: 378px;
+            height: 550px;
+            top: 17%;
+        }
+
+        &__subtitle {
+            max-width: 70%;
+            padding-left: 3%;
+
+            &-text {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .home-work-with {
+            &__container {
+            padding-left: 5%;
+        }
+
+        &__title {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        } 
+
+        &__subtitle {
+            font-size: 1.3rem;
+            padding-bottom: 1rem;
+        }
+
+        &__list {
+            width: 90%;
+            padding-left: 5%;
+
+            &-catalouge-text {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    // Альбина
+    .home-services {
+        padding: 60px 0 60px 0;
 
 		&__container {
 			margin: 52px 0 60px 0;
@@ -324,71 +368,75 @@
 
 @media screen and (max-width: $big-tablet) {
 	// Диана
-	.home-main__container-img {
-		right: -2%;
-	}
+	.home-main__container {
+        &-img {
+            right: -4%;
+        }
 
-	.home-main__container-text {
-		width: 80%;
+        &-text {
+            width: 80%;
 
-		&-title {
-			font-size: 3.8rem;
-		}
+            &-title {
+                font-size: 3.8rem;
+            }
+    
+            &-subtitle {
+                font-size: 1.3rem;
+            }
+        }
+    }
 
-		&-subtitle {
-			font-size: 1.3rem;
-		}
-	}
-
-	.home-coach-give {
-		&__container {
-			width: 90%;
-			padding-top: 5%;
-		}
+.home-coach-give {
+    &__container {
+        width: 100%;
+        padding-top: 7%;
+    }
 
 		&__img {
 			display: none;
 		}
 
 		&__title {
-			padding-left: 10%;
-			font-size: 3.8rem;
+			padding-left: 3%;
+			font-size: 3.6rem;
 		}
 
-		&__subtitle {
-			width: 100%;
+    &__subtitle {
+        max-width: 98%;
+        padding-left: 0;
 
-			&-text {
-				padding-left: 11%;
-				font-size: 1.3rem;
-			}
-		}
-	}
+        &-text {
+            padding-left: 4%;
+            font-size: 1.3rem;
+        }
+    }
+}
 
-	.home-work-with {
-		&__container {
-			width: 100%;
-		}
+.home-work-with {
+    &__title {
+        font-size: 3.6rem;
+        padding-bottom: 1rem;
+    }
 
-		&__title {
-			font-size: 3.8rem;
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-		}
+    &__subtitle {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+    }
 
-		&__subtitle {
-			font-size: 1.3rem;
-		}
+    &__list {
+        width: 95%;
 
-		&__list {
-			width: 100%;
-		}
+        &-catalouge-text {
+            font-size: 1.2rem;
+            padding-left: 2rem;
+            padding-top: 1rem;
+        }
 
-		&__list-catalouge {
-			width: 100%;
-			font-size: 1.3rem;
-		}
-	}
+        &-catalouge-img {
+            padding-bottom: 3%;
+        }
+    }
+}
 
 	// Альбина
 	.home-testimonials__item {
@@ -397,17 +445,98 @@
 }
 
 @media screen and (max-width: $tablet) {
-	// Диана
+    // Диана
+    .home-main__container {
+        &-img {
+        display: none;
+        width: 0;
+    }
 
-	// Альбина
-	.home-testimonials__item {
-		width: 90%;
-	}
+        &-text {
+        width: 100%;
+        padding-left: 20%;
+
+        &-subtitle {
+            padding-top: 10%;
+        }
+    }
 }
 
+.home-coach-give {
+    &__container {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    &__title {
+        padding-left: 2%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 3.2rem;
+    }
+
+    &__subtitle {
+        padding-left: 1%;
+    }
+
+    &__subtitle-text {
+        padding-left: 1%;
+        font-size: 1.2rem;
+    }
+}
+
+.home-work-with {
+&__container {
+    padding-left: 1%;
+
+    &__list {
+        padding-left: 1%;
+
+        &-catalouge-text {
+            padding-bottom: 1rem;
+        }
+    }
+
+    &__list-catalouge-img {
+        display: none;
+    }
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        padding-top: 1rem;
+    }
+}
+
+    // Альбина
+    .home-testimonials__item {
+        width: 90%;
+    }
+}
 @media screen and (max-width: $big-mobile) {
 	// Диана
+    .home-main__container {
+        min-height: 80%;
+        &-text {
+            &-title {
+                padding-top: 4rem;
+            }
+            &-subtitle {
+                padding-bottom: 40px;
+            }
+        }
+    }
 
+    .home-work-with {
+        &__subtitle {
+            font-size: 1.2rem;
+        }
+
+        &__list {
+            padding-left: 0;
+        }
+    }
+    
 	// Альбина
 	.home-question__text {
 		margin: 13px 0 60px 0;
@@ -417,7 +546,11 @@
 
 @media screen and (max-width: $mobile) {
 	// Диана
-
+    .home-main__container {
+        &-text {
+            padding-left: 5%;
+        }
+    }
 	// Альбина
 	.button_home-services-btn_small {
 		width: 110px;
