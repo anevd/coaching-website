@@ -739,7 +739,7 @@ p {
 
 .home-work-with {
   background-color: #f6f1eb;
-  min-height: 708px;
+  min-height: 710px;
   height: 100%;
 }
 .home-work-with__container {
@@ -763,12 +763,12 @@ p {
   padding-bottom: 1.3rem;
 }
 .home-work-with__list-catalouge {
-  font-size: 1.5rem;
-  line-height: 140%;
-  letter-spacing: 0.02em;
   display: flex;
 }
 .home-work-with__list-catalouge-text {
+  font-size: 1.5rem;
+  line-height: 140%;
+  letter-spacing: 0.02em;
   padding-left: 3.3rem;
   padding-top: 1.43rem;
 }
@@ -893,20 +893,44 @@ p {
 
 /* ------------------------ Media queries ------------------------ */
 @media screen and (max-width: 1280px) {
+  .home-main__container-text .button {
+    max-width: 80%;
+  }
   .home-main__container-img {
     width: 456px;
     height: 543px;
-    right: -2%;
+    right: -5%;
+    top: 14%;
+  }
+  .home-coach-give__img {
+    width: 378px;
+    height: 550px;
+    top: 17%;
   }
   .home-coach-give__subtitle {
     max-width: 70%;
-    padding-left: 5%;
+    padding-left: 3%;
+  }
+  .home-coach-give__subtitle-text {
+    font-size: 1.3rem;
   }
   .home-work-with__container {
     padding-left: 5%;
   }
+  .home-work-with__title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .home-work-with__subtitle {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
   .home-work-with__list {
+    width: 90%;
     padding-left: 5%;
+  }
+  .home-work-with__list-catalouge-text {
+    font-size: 1.3rem;
   }
   .home-services {
     padding: 60px 0 60px 0;
@@ -930,7 +954,7 @@ p {
 }
 @media screen and (max-width: 1025px) {
   .home-main__container-img {
-    right: -2%;
+    right: -4%;
   }
   .home-main__container-text {
     width: 80%;
@@ -943,21 +967,41 @@ p {
   }
   .home-coach-give__container {
     width: 100%;
-    padding-top: 1%;
+    padding-top: 7%;
   }
   .home-coach-give__img {
     display: none;
   }
   .home-coach-give__title {
-    padding-left: 10%;
-    font-size: 3.8rem;
+    padding-left: 3%;
+    font-size: 3.6rem;
   }
   .home-coach-give__subtitle {
-    width: 100%;
+    max-width: 98%;
+    padding-left: 0;
   }
   .home-coach-give__subtitle-text {
-    padding-left: 11%;
+    padding-left: 4%;
     font-size: 1.3rem;
+  }
+  .home-work-with__title {
+    font-size: 3.6rem;
+    padding-bottom: 1rem;
+  }
+  .home-work-with__subtitle {
+    font-size: 1.2rem;
+    padding-bottom: 0;
+  }
+  .home-work-with__list {
+    width: 95%;
+  }
+  .home-work-with__list-catalouge-text {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+  .home-work-with__list-catalouge-img {
+    padding-bottom: 3%;
   }
   .home-testimonials__item {
     width: 85%;
@@ -966,18 +1010,24 @@ p {
 @media screen and (max-width: 768px) {
   .home-main__container-img {
     display: none;
+    width: 0;
   }
   .home-main__container-text {
     width: 100%;
-    padding-left: 17%;
+    padding-left: 20%;
+  }
+  .home-main__container-text-subtitle {
+    padding-top: 10%;
   }
   .home-coach-give__container {
     width: 100%;
-    padding-top: 12%;
+    padding-top: 0;
   }
   .home-coach-give__title {
     padding-left: 2%;
-    font-size: 3.4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 3.2rem;
   }
   .home-coach-give__subtitle {
     padding-left: 1%;
@@ -986,11 +1036,26 @@ p {
     padding-left: 1%;
     font-size: 1.2rem;
   }
+  .home-work-with__container {
+    padding-left: 1%;
+  }
+  .home-work-with__container__title {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+  .home-work-with__container__list {
+    padding-left: 1%;
+  }
+  .home-work-with__container__list-catalouge-text {
+    padding-bottom: 1rem;
+  }
+  .home-work-with__container__list-catalouge-img {
+    display: none;
+  }
+  .home-testimonials__item {
+    width: 90%;
+  }
 }
-.home-testimonials__item {
-  width: 90%;
-}
-
 @media screen and (max-width: 480px) {
   .home-question__text {
     margin: 13px 0 60px 0;
