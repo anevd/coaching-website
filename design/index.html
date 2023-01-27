@@ -23,7 +23,7 @@
 				<a href="./index.html" class="name-logo">Elena life coach</a>
 				<nav class="nav">
 					<ul class="nav__menu">
-						<li><a href="./index.html" class="nav__link nav__link_home">Home</a></li>
+						<li class="nav__link_home"><a href="./index.html" class="nav__link">Home</a></li>
 						<li><a href="./about.html" class="nav__link">About me</a></li>
 						<li><a href="./services.html" class="nav__link">Services</a></li>
 						<li><a href="./testimonials.html" class="nav__link">Testimonials</a></li>
@@ -47,7 +47,9 @@
 					<h1 class="home-main__container-text-title">ELENA LIFE COACH</h1>
 					<h3 class="home-main__container-text-subtitle">Certified coach, author of individual<br />coaching
 						programs and personal mentor</h3>
-					<button class="button" id="button">More about me</button>
+					<form action="./about.html">
+						<button class="button">More about me</button>
+					</form>
 				</div>
 				<img src="./assets/images/portrait-home.png" class="home-main__container-img" alt="portrait">
 			</div>
@@ -60,13 +62,19 @@
 			<div class="home-coach-give__container">
 				<h2 class="home-coach-give__title">WHAT CAN I GIVE AS A COACH</h2>
 				<div class="home-coach-give__subtitle">
-					<p class="home-coach-give__subtitle-text">Depending on your request, we will put together a set of
+					<p class="home-coach-give__subtitle-text">Depending on your request, we will put
+						together a set of
 						tools<br />for growth and development that is right for you.</p>
-					<p class="home-coach-give__subtitle-text">Together we will reveal your unlimited potential,
-						focus on your<br />dreams, and draw up an effective plan for their<br />implementation.</p>
-					<p class="home-coach-give__subtitle-text">After my coaching sessions, you will get rid of the fear
-						of<br />change, you will understand that you can manage the events in<br />your life and do what
-						you have long dreamed of. To live the way<br />you want is simple, the main thing is to
+					<p class="home-coach-give__subtitle-text">Together we will reveal your unlimited
+						potential,
+						focus on your<br />dreams, and draw up an effective plan for
+						their<br />implementation.</p>
+					<p class="home-coach-give__subtitle-text">After my coaching sessions, you will get rid
+						of the fear
+						of<br />change, you will understand that you can manage the events in<br />your life
+						and do what
+						you have long dreamed of. To live the way<br />you want is simple, the main thing is
+						to
 						correctly prioritize and<br />choose your right path!</p>
 				</div>
 			</div>
@@ -211,12 +219,13 @@
 
 	<!-- footer -->
 	<footer class="footer">
+		<img src="./assets/images/footer-branch.svg" alt="left branch image"
+			class="footer__branch footer__branch_left" />
 		<div class="wrapper">
 			<div class="footer__container">
-				<img src="./assets/images/footer-branch.svg" alt="left branch image"
-					class="footer__branch footer__branch_left" />
 				<nav class="nav">
 					<ul class="nav__menu">
+						<li class="nav__link_home"><a href="./index.html" class="nav__link nav__link_home">Home</a></li>
 						<li><a href="./about.html" class="nav__link">About me</a></li>
 						<li><a href="./services.html" class="nav__link">Services</a></li>
 						<li><a href="./testimonials.html" class="nav__link">Testimonials</a></li>
@@ -235,10 +244,10 @@
 								src="./assets/icons/fb.svg" alt="facebook logo" class="footer__socials-icon" /></a>
 					</div>
 				</div>
-				<img src="./assets/images/footer-branch.svg" alt="right branch image"
-					class="footer__branch footer__branch_right" />
 			</div>
 		</div>
+		<img src="./assets/images/footer-branch.svg" alt="right branch image"
+			class="footer__branch footer__branch_right" />
 	</footer>
 	<script src="./script.js"></script>
 </body>
