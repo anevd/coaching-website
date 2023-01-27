@@ -413,8 +413,6 @@
 }
 
 .home-work-with {
-    &__container {}
-
     &__title {
         font-size: 3.6rem;
         padding-bottom: 1rem;
@@ -491,11 +489,6 @@
 &__container {
     padding-left: 1%;
 
-    &__title {
-        font-size: 2rem;
-        padding-top: 1rem;
-    }
-
     &__list {
         padding-left: 1%;
 
@@ -508,6 +501,11 @@
         display: none;
     }
     }
+
+    &__title {
+        font-size: 2.8rem;
+        padding-top: 1rem;
+    }
 }
 
     // Альбина
@@ -517,7 +515,28 @@
 }
 @media screen and (max-width: $big-mobile) {
 	// Диана
+    .home-main__container {
+        min-height: 80%;
+        &-text {
+            &-title {
+                padding-top: 4rem;
+            }
+            &-subtitle {
+                padding-bottom: 40px;
+            }
+        }
+    }
 
+    .home-work-with {
+        &__subtitle {
+            font-size: 1rem;
+        }
+
+        &__list {
+            padding-left: 0;
+        }
+    }
+    
 	// Альбина
 	.home-question__text {
 		margin: 13px 0 60px 0;
@@ -527,7 +546,11 @@
 
 @media screen and (max-width: $mobile) {
 	// Диана
-
+    .home-main__container {
+        &-text {
+            padding-left: 5%;
+        }
+    }
 	// Альбина
 	.button_home-services-btn_small {
 		width: 110px;
