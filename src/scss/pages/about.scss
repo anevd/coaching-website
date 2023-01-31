@@ -1,0 +1,455 @@
+@import "../layouts/variables.scss";
+
+// Настя В
+.about-quote {
+	min-height: 342px;
+	background-color: #f6f1eb;
+	padding: 92px 0 59px 0;
+	&__wrapper {
+		display: flex;
+		width: 70%;
+	}
+
+	&_left {
+		font-family: $title-font;
+		font-size: 8vw;
+		color: #97a179;
+	}
+
+	&__text {
+		margin: 35px 0 0 1vw;
+		font-family: $title-font;
+		font-size: 48px;
+		line-height: 140%;
+		color: #3f3c20;
+	}
+
+	&_right {
+		margin: 80px 0 0 0;
+		font-family: $title-font;
+		font-size: 8vw;
+		color: #97a179;
+		line-height: 0.5;
+	}
+
+	&__author {
+		width: 70%;
+		margin-top: 40px;
+		font-size: 24px;
+		color: #3f3c20;
+		text-align: right;
+	}
+}
+
+.about-Elena {
+	position: relative;
+	padding: 101px 0 169px 0;
+	min-height: 650px;
+	overflow: hidden;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__photo {
+		margin-top: 1%;
+		width: 39%;
+	}
+
+	&__photo img {
+		width: 100%;
+	}
+
+	&__text {
+		margin-left: 4vw;
+		width: 45%;
+
+		&_title {
+			margin-bottom: 0;
+			font-family: $title-font;
+			font-size: 64px;
+			color: #3f3c20;
+		}
+
+		&_first {
+			margin-top: 43px;
+			font-size: 24px;
+			line-height: 140%;
+			color: #3f3c20;
+		}
+
+		&_second {
+			margin-top: 43px;
+			font-size: 24px;
+			line-height: 140%;
+			color: #3f3c20;
+			width: 80%;
+		}
+	}
+	&__background {
+		position: absolute;
+		top: 59px;
+		right: 0;
+	}
+}
+
+/* ------------------------ Media queries ------------------------ */
+@media screen and (max-width: 1370px) {
+	.about-Elena {
+		&__background {
+			top: 138px;
+			width: 370px;
+		}
+	}
+}
+@media screen and (max-width: $large-desktop) {
+}
+
+@media screen and (max-width: $desktop) {
+	.about-quote {
+		padding: 4% 0 4% 0;
+		&__text {
+			font-size: 40px;
+		}
+	}
+	.about-Elena {
+		padding: 4% 0 6% 0;
+		&__background {
+			display: none;
+		}
+		&__text {
+			width: 50%;
+			&_second {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $big-tablet) {
+	.about-quote {
+		min-height: 230px;
+
+		&__wrapper {
+			padding: 15px 0 0 0;
+		}
+
+		&_right {
+			margin-top: 130px;
+		}
+
+	}
+
+	.about-Elena {
+		min-height: 400px;
+
+		&__wrapper {
+			margin-top: 30px;
+		}
+
+		&__text_title {
+			font-size: 34px;
+		}
+
+		&__text_first {
+			margin-top: 20px;
+			font-size: 20px;
+		}
+
+		&__text_second {
+			margin-top: 20px;
+			font-size: 20px;
+		}
+
+		&__background {
+			top: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.about-quote {
+		min-height: 230px;
+		&__wrapper {
+			padding: 15px 0 0 0;
+			width: 100%;
+		}
+		&_left {
+			font-size: 60px;
+		}
+		&_right {
+			font-size: 60px;
+		}
+		&__author {
+			width: 100%;
+		}
+	}
+
+	.about-Elena {
+		min-height: 370px;
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		&__photo {
+			width: 85%;
+		}
+		&__text {
+			margin-left: 0;
+			width: 80%;
+		}
+		&__text_title {
+			margin-top: 20px;
+		}
+
+		&__text_first {
+			font-size: 18px;
+		}
+
+		&__text_second {
+			font-size: 18px;
+		}
+	}
+}
+
+@media screen and (max-width: $big-mobile) {
+	.about-quote {
+		width: 100%;
+		min-height: 110px;
+
+		&__wrapper {
+			display: flex;
+			padding: 0;
+		}
+
+		&_left {
+			font-size: 54px;
+		}
+
+		&__text {
+			margin: 15px 0 0 10px;
+			font-size: 20px;
+		}
+
+		&_right {
+			margin: 35px 0 0 0;
+			font-size: 54px;
+			line-height: 0.5;
+		}
+
+		&__author {
+			margin-top: 15px;
+			font-size: 10px;
+		}
+	}
+
+	.about-Elena {
+		min-height: 350px;
+
+		&__text_title {
+			margin: 10px 0 0 0;
+			font-size: 28px;
+		}
+
+		&__text_first {
+			font-size: 14px;
+		}
+
+		&__text_second {
+			font-size: 14px;
+		}
+
+		&__background {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.about-quote {
+		width: 100%;
+		min-height: 80px;
+
+		&__wrapper {
+			display: flex;
+			width: 100%;
+			padding: 0;
+		}
+
+		&_left {
+			font-size: 48px;
+		}
+
+		&__text {
+			margin: 15px 0 0 10px;
+			font-size: 14px;
+		}
+
+		&_right {
+			margin: 25px 0 0 0;
+			font-size: 48px;
+			line-height: 0.5;
+		}
+
+		&__author {
+			width: 100%;
+			margin-top: 17px;
+			font-size: 8px;
+		}
+	}
+
+	.about-Elena {
+		min-height: 350px;
+
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		&__photo {
+			width: 85%;
+		}
+
+		&__text {
+			margin-left: 0;
+			width: 80%;
+		}
+
+		&__text_title {
+			margin: 10px 0 0 0;
+			font-size: 24px;
+		}
+
+		&__text_first {
+			margin-top: 20px;
+			font-size: 12px;
+		}
+
+		&__text_second {
+			margin: 20px 0;
+			font-size: 12px;
+		}
+	}
+}
+
+// Настя С
+.about-path {
+	background-color: $color-beige;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 35px;
+
+	&__paragraph1,
+	&__paragraph2,
+	&__paragraph3 {
+		padding-bottom: 30px;
+		line-height: 140%;
+		font-size: 24px;
+		letter-spacing: 0.02em;
+	}
+
+	&__paragraph1 {
+		padding-top: 20px;
+	}
+}
+
+.about-education {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 50px;
+
+	.title_education {
+		margin-top: 5%;
+	}
+}
+
+.about-ages {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4%;
+}
+
+.about-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	width: 26%;
+	height: 73%;
+	padding: 30px;
+
+	.title_age {
+		background-color: $color-beige-dark;
+		width: 56%;
+		height: 73px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 26px;
+		border-radius: 1pc;
+		padding-left: 60pt;
+		padding-right: 60pt;
+	}
+
+	&__description {
+		font-weight: bold;
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: $big-tablet) {
+	.about-path {
+		&__paragraph1,
+		&__paragraph2,
+		&__paragraph3 {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.about-ages {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 4%;
+	}
+	.about-path {
+		&__paragraph1,
+		&__paragraph2,
+		&__paragraph3 {
+			font-size: 18px;
+		}
+	}
+}
+
+@media screen and (max-width: $big-mobile) {
+	.about-path {
+		&__paragraph1,
+		&__paragraph2,
+		&__paragraph3 {
+			font-size: 14px;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.about-path {
+		&__paragraph1,
+		&__paragraph2,
+		&__paragraph3 {
+			font-size: 12px;
+		}
+	}
+}
