@@ -735,9 +735,7 @@ p {
 
 .home-work-with {
   background-color: #f6f1eb;
-  min-height: 710px;
-  height: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 76px;
 }
 .home-work-with__container {
   width: 100%;
